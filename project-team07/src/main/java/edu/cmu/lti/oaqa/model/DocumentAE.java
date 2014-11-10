@@ -25,58 +25,49 @@ import edu.cmu.lti.oaqa.type.kb.Triple;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
 import edu.cmu.lti.oaqa.type.retrieval.Passage;
 
-
 public class DocumentAE extends JCasAnnotator_ImplBase {
-    
-   private GoPubMedService service;
-	
-   public void initialize(UimaContext aContext){
-	   String property_file = "project.properties";
-	   try {
-		service = new GoPubMedService(property_file);
-	   } catch (ConfigurationException e) {
-		   // TODO Auto-generated catch block
-		   e.printStackTrace();
-		   System.out.println("Service Initialization Failed");
-	   }	
-	}
-	
-	@Override
-	public void process(JCas jcas) throws AnalysisEngineProcessException {
-		// TODO Auto-generated method stub
-		
-		/*
-		 * Extract Question information
-		 */
-		Question question = TypeUtil.getQuestion(jcas);
-		String qID = question.getId();
-		String qType = question.getQuestionType();
-		String qText = question.getText();
-       
-        /* 
-         * Retrieve related Documents
-         */
-        try {
-	        String document_keyword = qText;
-	        OntologyServiceResponse.Result meshResult = service.findMeshEntitiesPaged(document_keyword, 0);
-	        int max_document = 3;//Just to make dummy output compact, no more than three outputs. 
-	        int counter =0;
-	        for (OntologyServiceResponse.Finding finding : meshResult.getFindings()) {
-	        	Document doc = TypeFactory.createDocument(jcas, finding.getConcept().getUri());
-	            doc.addToIndexes();
-	            counter ++;
-	            if(counter==max_document){
-	        		break;
-	        	}
-	        }
-	        
-		 } catch (Exception e){
-	     	System.out.println("Failed to extract documents");
-	     }
-        
-        
-       
 
-	}
+  private GoPubMedService service;
+
+  public void initialize(UimaContext aContext) {
+    String property_file = "project.properties";
+    try {
+      service = new GoPubMedService(property_file);
+    } catch (ConfigurationException e) {
+      e.printStackTrace();
+      System.out.println("Service Initialization Failed");
+    }
+  }
+
+  @Override
+  public void process(JCas jcas) throws AnalysisEngineProcessException {
+    /*
+     * Extract Question information
+     */
+    Question question = TypeUtil.getQuestion(jcas);
+    String qID = question.getId();
+    String qType = question.getQuestionType();
+    String qText = question.getText();
+
+    /*
+     * Retrieve related Documents
+     */
+    try {
+      String[] words = qText.toLowerCase().split(" ");
+      for (String word : words) {
+        OntologyServiceResponse.Result meshResult = service.findMeshEntitiesPaged(word, 0);
+        for (OntologyServiceResponse.Finding finding : meshResult.getFindings()) {
+          if (finding.getScore() > 0.5) {
+            Document doc = TypeFactory.createDocument(jcas, finding.getConcept().getUri());
+            doc.addToIndexes();
+          }
+        }
+      }
+
+    } catch (Exception e) {
+      System.out.println("Failed to extract documents");
+    }
+
+  }
 
 }
