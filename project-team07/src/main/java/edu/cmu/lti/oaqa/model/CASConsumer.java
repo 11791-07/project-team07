@@ -30,7 +30,7 @@ import edu.cmu.lti.oaqa.type.kb.Concept;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
 import util.TypeUtil;
 
-public class CollectionConsumer extends CasConsumer_ImplBase {
+public class CASConsumer extends CasConsumer_ImplBase {
     
 	
 	List<TestQuestion> processed_questions;
