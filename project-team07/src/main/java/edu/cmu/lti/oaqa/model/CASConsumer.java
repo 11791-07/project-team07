@@ -4,14 +4,11 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 import json.gson.QuestionType;
 import json.gson.Snippet;
-import json.gson.TestFactoidQuestion;
 import json.gson.TestQuestion;
 import json.gson.TestSet;
 import json.gson.Triple;
@@ -19,7 +16,6 @@ import json.gson.Triple;
 import org.apache.uima.cas.CAS;
 import org.apache.uima.cas.CASException;
 import org.apache.uima.collection.CasConsumer_ImplBase;
-import org.apache.uima.collection.CollectionException;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.resource.ResourceProcessException;
@@ -44,7 +40,6 @@ public class CASConsumer extends CasConsumer_ImplBase {
 	
 	@Override
 	public void processCas(CAS aJcas) throws ResourceProcessException {
-		// TODO Auto-generated method stub
 		JCas jcas;
 		Question question;
 	    try {
