@@ -26,7 +26,7 @@ import edu.cmu.lti.oaqa.type.retrieval.Document;
 import edu.cmu.lti.oaqa.type.retrieval.Passage;
 
 
-public class DummyAanlysisEngine extends JCasAnnotator_ImplBase {
+public class ConceptAE extends JCasAnnotator_ImplBase {
     
    private GoPubMedService service;
 	
@@ -74,41 +74,6 @@ public class DummyAanlysisEngine extends JCasAnnotator_ImplBase {
         	System.out.println("Failed to extract concepts");
         }
         
-        /* 
-         * Retrieve related Documents
-         */
-        try {
-	        String document_keyword = qText;
-	        OntologyServiceResponse.Result meshResult = service.findMeshEntitiesPaged(document_keyword, 0);
-	        int max_document = 3;//Just to make dummy output compact, no more than three outputs. 
-	        int counter =0;
-	        for (OntologyServiceResponse.Finding finding : meshResult.getFindings()) {
-	        	Document doc = TypeFactory.createDocument(jcas, finding.getConcept().getUri());
-	            doc.addToIndexes();
-	            counter ++;
-	            if(counter==max_document){
-	        		break;
-	        	}
-	        }
-	        
-		 } catch (Exception e){
-	     	System.out.println("Failed to extract documents");
-	     }
-        
-        
-        /*
-         * Retrieve related Triples
-         */
-         try {
-	        String triple_keyword = qText;
-	        //Dummy triple outputs, only made two here.
-	        Triple triple = TypeFactory.createTriple(jcas, "subject1", "predicate1", "object1");
-            triple.addToIndexes();
-            triple = TypeFactory.createTriple(jcas, "subject2", "predicate2", "object2");
-            triple.addToIndexes();  
-         } catch (Exception e){
-        	System.out.println("Failed to extract triples");
-         }
 
 	}
 

@@ -10,7 +10,7 @@
     <casProcessors casPoolSize="3" processingUnitThreadCount="1">
         <casProcessor deployment="integrated" name="NERaae">
             <descriptor>
-                <import location="DummyaeDescriptor.xml"/>
+                <import location="aaeDescriptor.xml"/>
             </descriptor>
             <deploymentParameters/>
             <errorHandling>
