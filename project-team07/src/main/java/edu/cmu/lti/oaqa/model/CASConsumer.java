@@ -1,11 +1,19 @@
 package edu.cmu.lti.oaqa.model;
 
+import static java.util.stream.Collectors.toList;
+
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+
+import javax.json.*;
 
 import json.gson.QuestionType;
 import json.gson.Snippet;
@@ -31,14 +39,16 @@ public class CASConsumer extends CasConsumer_ImplBase {
   List<TestQuestion> processed_questions;
 
   private String processed_file;
-  private String gold_standard;
+
+  private List<TestQuestion> gold_standard;
 
   public void initialize() throws ResourceInitializationException {
     processed_questions = new ArrayList<TestQuestion>();
     // processed_file = "src/main/resources/Phase1_output.json";
     processed_file = "src/main/resources/Phase1_output_single.json";
-    //gold_standard = "src/main/resources/BioASQ-SampleData1B.json";
-    gold_standard = "src/main/resources/BioASQ-SampleData1B_single.json";
+    // gold_standard = "src/main/resources/BioASQ-SampleData1B.json";
+    String gold_standard_string = "src/main/resources/BioASQ-SampleData1B_single.json";
+    gold_standard = readJSON(gold_standard_string);
   }
 
   @Override
@@ -115,44 +125,62 @@ public class CASConsumer extends CasConsumer_ImplBase {
     }
   }
 
-  public double precision(double tp, double fp)
-	{
-    return tp / (tp+fp);
-	}
-  
-  public double recall(double tp, double fn)
-  {
-    return tp / (tp+fn);
+  public double precision(double tp, double fp) {
+    return tp / (tp + fp);
   }
-  
-  public double fMeasure(double P, double R)
-  {
-    return (2*P*R)/(P+R);
+
+  public double recall(double tp, double fn) {
+    return tp / (tp + fn);
   }
-  
-  public double AP(double[] P, int[] rel, int Lr){
-   double total = 0.0;
-   for (int r = 0; r<P.length;r++){
-    total+=P[r]*rel[r];
-   }
+
+  public double fMeasure(double P, double R) {
+    return (2 * P * R) / (P + R);
+  }
+
+  public double AP(double[] P, int[] rel, int Lr) {
+    double total = 0.0;
+    for (int r = 0; r < P.length; r++) {
+      total += P[r] * rel[r];
+    }
     total /= Lr;
     return total;
-  
+
   }
-  public double MAP(double[] AP){
+
+  public double MAP(double[] AP) {
     double answer = 0.0;
-    for (int i=0;i<AP.length;i++){
+    for (int i = 0; i < AP.length; i++) {
       answer += AP[i];
     }
-    answer/=AP.length;
+    answer /= AP.length;
     return answer;
   }
-  public double GMAP(double[] AP, double epsilon)
-  {
+
+  public double GMAP(double[] AP, double epsilon) {
     double answer = 1.0;
-    for (int i=0;i<AP.length;i++){
+    for (int i = 0; i < AP.length; i++) {
       answer *= (AP[i] + epsilon);
     }
-    return Math.pow(answer,(1/AP.length));
+    return Math.pow(answer, (1 / AP.length));
+  }
+
+  public List<TestQuestion> readJSON(String filePath) {
+    List<TestQuestion> question_list = null;
+    FileInputStream fis = null;
+    Object value = filePath;
+    try {
+      fis = new FileInputStream(filePath);
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    }
+    if (String.class.isAssignableFrom(value.getClass())) {
+      question_list = (List<TestQuestion>) TestSet.load(fis);
+    } else if (String[].class.isAssignableFrom(value.getClass())) {
+      question_list = Arrays.stream(String[].class.cast(value))
+              .flatMap(path -> TestSet.load(getClass().getResourceAsStream(path)).stream())
+              .collect(toList());
+    }
+
+    return question_list;
   }
 }
