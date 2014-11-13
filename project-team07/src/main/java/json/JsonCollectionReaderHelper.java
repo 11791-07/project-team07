@@ -1,18 +1,9 @@
 package json;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
+import static java.util.stream.Collectors.toList;
+
 import java.util.Arrays;
 import java.util.List;
-
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.cas.CAS;
-
-import com.google.common.collect.Lists;
-import com.google.gson.Gson;
 
 import json.gson.Question;
 import json.gson.QuestionType;
@@ -23,13 +14,18 @@ import json.gson.TrainingFactoidQuestion;
 import json.gson.TrainingListQuestion;
 import json.gson.TrainingQuestion;
 import json.gson.TrainingYesNoQuestion;
+
+import org.apache.uima.jcas.JCas;
+
+import util.TypeFactory;
+
+import com.google.common.collect.Lists;
+
 import edu.cmu.lti.oaqa.type.answer.Answer;
-import static java.util.stream.Collectors.toList;
 import edu.cmu.lti.oaqa.type.retrieval.ConceptSearchResult;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
 import edu.cmu.lti.oaqa.type.retrieval.Passage;
 import edu.cmu.lti.oaqa.type.retrieval.TripleSearchResult;
-import util.TypeFactory;
 
 public class JsonCollectionReaderHelper {
 
