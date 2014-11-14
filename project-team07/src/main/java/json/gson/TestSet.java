@@ -1,8 +1,11 @@
 package json.gson;
 
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.util.HashMap;
 import java.util.List;
 
 import com.github.julman99.gsonfire.GsonFireBuilder;
@@ -50,6 +53,15 @@ public class TestSet {
 
   public static List<? extends TestQuestion> load(InputStream stream) {
     return load(new InputStreamReader(stream));
+  }
+  public static HashMap<String, ? extends TestQuestion> loadMap(InputStream stream) {
+    List<? extends TestQuestion> l = load(new InputStreamReader(stream));
+    HashMap<String, TestQuestion> map = new HashMap<String, TestQuestion>();
+    for (int i=0;i<l.size();i++){
+      TestQuestion tq = l.get(i);
+      map.put(tq.getId(), tq);
+    }
+    return map;
   }
 
   public static String dump(List<? extends TestQuestion> answers) {
