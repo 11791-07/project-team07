@@ -9,8 +9,10 @@ import org.apache.uima.jcas.JCas;
 import util.TypeFactory;
 import util.TypeUtil;
 import edu.cmu.lti.oaqa.bio.bioasq.services.GoPubMedService;
+import edu.cmu.lti.oaqa.bio.bioasq.services.LinkedLifeDataServiceResponse;
 import edu.cmu.lti.oaqa.type.input.Question;
 import edu.cmu.lti.oaqa.type.kb.Triple;
+import edu.cmu.lti.oaqa.type.retrieval.TripleSearchResult;
 
 
 public class TripleAE extends JCasAnnotator_ImplBase {
@@ -31,7 +33,6 @@ public class TripleAE extends JCasAnnotator_ImplBase {
 	@Override
 	public void process(JCas jcas) throws AnalysisEngineProcessException {
 		// TODO Auto-generated method stub
-		
 		/*
 		 * Extract Question information
 		 */
@@ -39,21 +40,20 @@ public class TripleAE extends JCasAnnotator_ImplBase {
 		String qID = question.getId();
 		String qType = question.getQuestionType();
 		String qText = question.getText();
-            
-        
-        /*
-         * Retrieve related Triples
-         */
-         try {
+        try {
 	        String triple_keyword = qText;
-	        //Dummy triple outputs, only made two here.
-	        Triple triple = TypeFactory.createTriple(jcas, "subject1", "predicate1", "object1");
-            triple.addToIndexes();
-            triple = TypeFactory.createTriple(jcas, "subject2", "predicate2", "object2");
-            triple.addToIndexes();  
-         } catch (Exception e){
+	        LinkedLifeDataServiceResponse.Result linkedLifeDataResult = service
+	                .findLinkedLifeDataEntitiesPaged(triple_keyword, 0);
+	        for (LinkedLifeDataServiceResponse.Entity entity : linkedLifeDataResult.getEntities()) {
+	          for (LinkedLifeDataServiceResponse.Relation relation : entity.getRelations()) {
+	        	  Triple triple = TypeFactory.createTriple(jcas, relation.getSubj(),  relation.getPred(), relation.getObj()); 
+	        	  TripleSearchResult tripleresult= TypeFactory.createTripleSearchResult(jcas, triple);         
+	        	  tripleresult.addToIndexes();       
+	          }
+	        }
+        } catch (Exception e){
         	System.out.println("Failed to extract triples");
-         }
+        }
 
 	}
 
