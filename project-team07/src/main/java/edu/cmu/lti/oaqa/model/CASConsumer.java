@@ -82,6 +82,10 @@ public class CASConsumer extends CasConsumer_ImplBase {
       for (Document doc : TypeUtil.getRankedDocuments(jcas)) {
         documents.add(doc.getUri());
       }
+      /*
+      for (Document doc : TypeUtil.getRankedDocuments(jcas)) {
+        documents.add(doc.getUri());
+      }*/
 
       // Get snippets retrieved in AE. Just make it empty, I did not extract snippets in dummy AE
       List<Snippet> snippets = new ArrayList<Snippet>();
