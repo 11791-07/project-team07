@@ -9,10 +9,13 @@ import org.apache.uima.jcas.JCas;
 import util.TypeFactory;
 import util.TypeUtil;
 import edu.cmu.lti.oaqa.bio.bioasq.services.GoPubMedService;
+import edu.cmu.lti.oaqa.bio.bioasq.services.LinkedLifeDataServiceResponse;
 import edu.cmu.lti.oaqa.bio.bioasq.services.OntologyServiceResponse;
 import edu.cmu.lti.oaqa.bio.bioasq.services.PubMedSearchServiceResponse.Result;
 import edu.cmu.lti.oaqa.type.input.Question;
+import edu.cmu.lti.oaqa.type.kb.Triple;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
+import edu.cmu.lti.oaqa.type.retrieval.TripleSearchResult;
 
 public class DocumentAE extends JCasAnnotator_ImplBase {
 
@@ -42,17 +45,18 @@ public class DocumentAE extends JCasAnnotator_ImplBase {
      * Retrieve related Documents
      */
     try {
+      //TODO: create stopword list
       String[] words = qText.toLowerCase().split(" ");
-      /*for (String word : words) {
-        //OntologyServiceResponse.Result meshResult = service.findMeshEntitiesPaged(word, 0);
+      for (String word : words) {
         Result meshResult = service.findPubMedCitations(word, 0);
         for (edu.cmu.lti.oaqa.bio.bioasq.services.PubMedSearchServiceResponse.Document finding : meshResult.getDocuments()) {
-          if (finding. > 0.5) {
-            Document doc = TypeFactory.createDocument(jcas, finding.getConcept().getUri());
-            doc.addToIndexes();
-          }
-        }*/
-      for (String word : words) {
+            Document doc = TypeFactory.createDocument(jcas, "http://www.ncbi.nlm.nih.gov/pubmed/" + finding.getPmid(), finding.getPmid());
+            doc.addToIndexes();          
+        }
+      }
+        
+      /*//working code dummy code
+        for (String word : words) {
         OntologyServiceResponse.Result meshResult = service.findMeshEntitiesPaged(word, 0);
         for (OntologyServiceResponse.Finding finding : meshResult.getFindings()) {
           if (finding.getScore() > 0.5) {
@@ -60,7 +64,9 @@ public class DocumentAE extends JCasAnnotator_ImplBase {
             doc.addToIndexes();
           }
         }
-      }
+      }*/   
+      
+      
 
     } catch (Exception e) {
       System.out.println("Failed to extract documents");
