@@ -10,6 +10,7 @@ import util.TypeFactory;
 import util.TypeUtil;
 import edu.cmu.lti.oaqa.bio.bioasq.services.GoPubMedService;
 import edu.cmu.lti.oaqa.bio.bioasq.services.OntologyServiceResponse;
+import edu.cmu.lti.oaqa.bio.bioasq.services.PubMedSearchServiceResponse.Result;
 import edu.cmu.lti.oaqa.type.input.Question;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
 
@@ -42,6 +43,15 @@ public class DocumentAE extends JCasAnnotator_ImplBase {
      */
     try {
       String[] words = qText.toLowerCase().split(" ");
+      /*for (String word : words) {
+        //OntologyServiceResponse.Result meshResult = service.findMeshEntitiesPaged(word, 0);
+        Result meshResult = service.findPubMedCitations(word, 0);
+        for (edu.cmu.lti.oaqa.bio.bioasq.services.PubMedSearchServiceResponse.Document finding : meshResult.getDocuments()) {
+          if (finding. > 0.5) {
+            Document doc = TypeFactory.createDocument(jcas, finding.getConcept().getUri());
+            doc.addToIndexes();
+          }
+        }*/
       for (String word : words) {
         OntologyServiceResponse.Result meshResult = service.findMeshEntitiesPaged(word, 0);
         for (OntologyServiceResponse.Finding finding : meshResult.getFindings()) {

@@ -34,6 +34,7 @@ import edu.cmu.lti.oaqa.type.kb.Concept;
 import edu.cmu.lti.oaqa.type.input.Question;
 import edu.cmu.lti.oaqa.type.retrieval.ConceptSearchResult;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
+import edu.cmu.lti.oaqa.type.retrieval.Passage;
 import edu.cmu.lti.oaqa.type.retrieval.TripleSearchResult;
 
 public class CASConsumer extends CasConsumer_ImplBase {
@@ -84,12 +85,20 @@ public class CASConsumer extends CasConsumer_ImplBase {
 
       // Get snippets retrieved in AE. Just make it empty, I did not extract snippets in dummy AE
       List<Snippet> snippets = new ArrayList<Snippet>();
+      for (Passage snip : TypeUtil.getRankedPassages(jcas)) { snippets.addAll((Collection<? extends Snippet>) snip); }
 
       // Get concepts retrieved in AE
       List<String> concepts = new ArrayList<String>();
       for (Concept concept : TypeUtil.getConcept(jcas)) {
         concepts.add(concept.getUris().getNthElement(0));
       }
+      /*List<String> concepts = new ArrayList<String>();
+      Collection<ConceptSearchResult> c = TypeUtil.getRankedConceptSearchResults(jcas);
+      Collection<Concept> c2 = TypeUtil.getConcept(jcas); //if (c.isEmpty()) { for (Concept
+      concept : c2) { concepts.addAll((Collection<? extends String>) concept.getUris()); } } else
+      { for (ConceptSearchResult concept : c) { concepts.add(concept.getUri()); } }*/
+      
+      
 
       // Get triples retrieved in AE
       List<Triple> json_triples = new ArrayList<Triple>();
@@ -103,28 +112,6 @@ public class CASConsumer extends CasConsumer_ImplBase {
                 triple.getSubject());
         json_triples.add(json_triple);
       }
-
-      /*
-       * // Get documents retrieved in AE List<String> documents = new ArrayList<String>(); for
-       * (Document doc : TypeUtil.getRankedDocuments(jcas)) { documents.add(doc.getUri()); }
-       * 
-       * // Get snippets retrieved in AE. Just make it empty, I did not extract snippets in dummy AE
-       * List<Snippet> snippets = new ArrayList<Snippet>();
-       * 
-       * for (Snippet snip : TypeUtil.gegetRankedPassages(jcas)) { snippets.add(snip); }
-       * 
-       * 
-       * // Get concepts retrieved in AE List<String> concepts = new ArrayList<String>();
-       * /*Collection<ConceptSearchResult> c = TypeUtil.getRankedConceptSearchResults(jcas);
-       * Collection<Concept> c2 = TypeUtil.getConcept(jcas); //if (c.isEmpty()) { for (Concept
-       * concept : c2) { concepts.addAll((Collection<? extends String>) concept.getUris()); } } else
-       * { for (ConceptSearchResult concept : c) { concepts.add(concept.getUri()); } }
-       * 
-       * // Get triples retrieved in AE List<Triple> json_triples = new ArrayList<Triple>(); for
-       * (TripleSearchResult triple : TypeUtil.getRankedTripleSearchResults(jcas)) { Triple
-       * json_triple = new Triple(triple.getTriple().getObject(), triple.getTriple()
-       * .getPredicate(), triple.getTriple().getSubject()); json_triples.add(json_triple); }
-       */
 
       // Construct processed question object from information above then put it into list.
       // I changed the constructor of TestQuestion from protected to public so we can initialize it
@@ -142,14 +129,13 @@ public class CASConsumer extends CasConsumer_ImplBase {
   public void collectionProcessComplete(ProcessTrace arg0) throws ResourceProcessException,
           IOException {
     super.collectionProcessComplete(arg0);
-
     for (int i = 0; i < processed_questions.size(); i++) {
       TestQuestion next = processed_questions.get(i);
       String id = next.getId();
       TestQuestion gold = gold_standard.get(id);
       solveIt(gold, next, "concept");
       solveIt(gold, next, "document");
-      solveIt(gold, next, "triple");
+      //solveIt(gold, next, "triple");
     }
     double MAP_concept = MAP(e_concept.getAP());
     double MAP_document = MAP(e_document.getAP());
@@ -162,7 +148,7 @@ public class CASConsumer extends CasConsumer_ImplBase {
     BufferedWriter writer = new BufferedWriter(new FileWriter(new File(processed_file)));
     writer.write(output);
     writer.write("\nConcept MAP: " + MAP_concept + "\nDocument MAP: " + MAP_document
-            + "\nTriple MAP: " + MAP_triple);
+            + "\nTriple MAP: " + MAP_triple + "\nConcept GMAP: "+GMAP_concept+"\nDocument GMAP: "+GMAP_document+"\nTriple GMAP: "+GMAP_triple);
     writer.flush();
     writer.close();
 
@@ -197,6 +183,10 @@ public class CASConsumer extends CasConsumer_ImplBase {
         FP++;
       }
     }
+    if (TP + FP == 0)
+    {
+      return 0.0;
+    }
     return (double) TP / (TP + FP);
   }
 
@@ -216,6 +206,10 @@ public class CASConsumer extends CasConsumer_ImplBase {
         found = false;
       }
     }
+    if (TP + FP == 0)
+    {
+      return 0.0;
+    }
     return (double) TP / (TP + FP);
   }
 
@@ -227,6 +221,10 @@ public class CASConsumer extends CasConsumer_ImplBase {
       }
     }
     int FN = gold.size() - TP;
+    if (TP + FN == 0)
+    {
+      return 0.0;
+    }
     return (double) TP / (TP + FN);
   }
 
@@ -240,10 +238,18 @@ public class CASConsumer extends CasConsumer_ImplBase {
       }
     }
     int FN = gold.size() - TP;
+    if (TP + FN == 0)
+    {
+      return 0.0;
+    }
     return (double) TP / (TP + FN);
   }
 
   public double fMeasure(double P, double R) {
+    if (P + R == 0)
+    {
+      return 0.0;
+    }
     return (2 * P * R) / (P + R);
   }
 
@@ -283,6 +289,10 @@ public class CASConsumer extends CasConsumer_ImplBase {
       }
       total += triplePrecision(rList, gold) * rel;
     }
+    if (rel_total == 0)
+    {
+      return 0.0;
+    }
     total /= rel_total;
     return total;
 
@@ -293,6 +303,10 @@ public class CASConsumer extends CasConsumer_ImplBase {
     for (int i = 0; i < AP.size(); i++) {
       answer += AP.get(i);
     }
+    if (AP.size() == 0)
+    {
+      return 0.0;
+    }
     answer /= AP.size();
     return answer;
   }
@@ -301,6 +315,10 @@ public class CASConsumer extends CasConsumer_ImplBase {
     double answer = 1.0;
     for (int i = 0; i < AP.size(); i++) {
       answer *= (AP.get(i) + epsilon);
+    }
+    if (AP.size() == 0)
+    {
+      return 0.0;
     }
     return Math.pow(answer, (1 / AP.size()));
   }
