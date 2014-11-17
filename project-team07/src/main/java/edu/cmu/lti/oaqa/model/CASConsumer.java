@@ -30,11 +30,10 @@ import org.apache.uima.util.ProcessTrace;
 
 import util.TypeUtil;
 import util.EvaluationObject;
-import edu.cmu.lti.oaqa.type.input.Question;
 import edu.cmu.lti.oaqa.type.kb.Concept;
+import edu.cmu.lti.oaqa.type.input.Question;
 import edu.cmu.lti.oaqa.type.retrieval.ConceptSearchResult;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
-import edu.cmu.lti.oaqa.type.retrieval.Passage;
 import edu.cmu.lti.oaqa.type.retrieval.TripleSearchResult;
 
 public class CASConsumer extends CasConsumer_ImplBase {
@@ -50,13 +49,15 @@ public class CASConsumer extends CasConsumer_ImplBase {
   private EvaluationObject e_document;
 
   private EvaluationObject e_triple;
+  
+  private static double EPSILON = 0.1;
 
   public void initialize() throws ResourceInitializationException {
     processed_questions = new ArrayList<TestQuestion>();
-    // processed_file = "src/main/resources/Phase1_output.json";
-    processed_file = "src/main/resources/Phase1_output_single.json";
-    // gold_standard = "src/main/resources/BioASQ-SampleData1B.json";
-    String gold_standard_string = "src/main/resources/BioASQ-SampleData1B_single.json";
+    processed_file = "src/main/resources/Phase1_output.json";
+    // processed_file = "src/main/resources/Phase1_output_single.json";
+    String gold_standard_string = "src/main/resources/BioASQ-SampleData1B.json";
+    // String gold_standard_string = "src/main/resources/BioASQ-SampleData1B_single.json";
     gold_standard = readJSON(gold_standard_string);
     e_concept = new EvaluationObject();
     e_document = new EvaluationObject();
@@ -83,29 +84,53 @@ public class CASConsumer extends CasConsumer_ImplBase {
 
       // Get snippets retrieved in AE. Just make it empty, I did not extract snippets in dummy AE
       List<Snippet> snippets = new ArrayList<Snippet>();
-      /*
-       * for (Snippet snip : TypeUtil.gegetRankedPassages(jcas)) { snippets.add(snip); }
-       */
 
       // Get concepts retrieved in AE
       List<String> concepts = new ArrayList<String>();
-      for (ConceptSearchResult concept : TypeUtil.getRankedConceptSearchResults(jcas)) {
-        concepts.add(concept.getUri());
+      for (Concept concept : TypeUtil.getConcept(jcas)) {
+        concepts.add(concept.getUris().getNthElement(0));
       }
 
       // Get triples retrieved in AE
-      List<Triple> jason_triples = new ArrayList<Triple>();
-      for (TripleSearchResult triple : TypeUtil.getRankedTripleSearchResults(jcas)) {
-        Triple jason_triple = new Triple(triple.getTriple().getObject(), triple.getTriple()
-                .getPredicate(), triple.getTriple().getSubject());
-        jason_triples.add(jason_triple);
+      List<Triple> json_triples = new ArrayList<Triple>();
+      /*
+       * for (TripleSearchResult triple : TypeUtil.getRankedTripleSearchResults(jcas)) { Triple
+       * json_triple = new Triple(triple.getTriple().getObject(), triple.getTriple()
+       * .getPredicate(), triple.getTriple().getSubject()); json_triples.add(json_triple);
+       */
+      for (edu.cmu.lti.oaqa.type.kb.Triple triple : TypeUtil.getTriple(jcas)) {
+        Triple json_triple = new Triple(triple.getObject(), triple.getPredicate(),
+                triple.getSubject());
+        json_triples.add(json_triple);
       }
+
+      /*
+       * // Get documents retrieved in AE List<String> documents = new ArrayList<String>(); for
+       * (Document doc : TypeUtil.getRankedDocuments(jcas)) { documents.add(doc.getUri()); }
+       * 
+       * // Get snippets retrieved in AE. Just make it empty, I did not extract snippets in dummy AE
+       * List<Snippet> snippets = new ArrayList<Snippet>();
+       * 
+       * for (Snippet snip : TypeUtil.gegetRankedPassages(jcas)) { snippets.add(snip); }
+       * 
+       * 
+       * // Get concepts retrieved in AE List<String> concepts = new ArrayList<String>();
+       * /*Collection<ConceptSearchResult> c = TypeUtil.getRankedConceptSearchResults(jcas);
+       * Collection<Concept> c2 = TypeUtil.getConcept(jcas); //if (c.isEmpty()) { for (Concept
+       * concept : c2) { concepts.addAll((Collection<? extends String>) concept.getUris()); } } else
+       * { for (ConceptSearchResult concept : c) { concepts.add(concept.getUri()); } }
+       * 
+       * // Get triples retrieved in AE List<Triple> json_triples = new ArrayList<Triple>(); for
+       * (TripleSearchResult triple : TypeUtil.getRankedTripleSearchResults(jcas)) { Triple
+       * json_triple = new Triple(triple.getTriple().getObject(), triple.getTriple()
+       * .getPredicate(), triple.getTriple().getSubject()); json_triples.add(json_triple); }
+       */
 
       // Construct processed question object from information above then put it into list.
       // I changed the constructor of TestQuestion from protected to public so we can initialize it
       // here.
       TestQuestion processed_question = new TestQuestion(id, body, type, documents, snippets,
-              concepts, jason_triples, "");
+              concepts, json_triples, "");
       processed_questions.add(processed_question);
 
     } catch (CASException e) {
@@ -129,13 +154,15 @@ public class CASConsumer extends CasConsumer_ImplBase {
     double MAP_concept = MAP(e_concept.getAP());
     double MAP_document = MAP(e_document.getAP());
     double MAP_triple = MAP(e_triple.getAP());
-    System.out.println("Concept MAP: " + MAP_concept);
-    System.out.println("Document MAP: " + MAP_document);
-    System.out.println("Triple MAP: " + MAP_triple);
-    
+    double GMAP_concept = GMAP(e_concept.getAP(), EPSILON);
+    double GMAP_document = GMAP(e_document.getAP(), EPSILON);
+    double GMAP_triple = GMAP(e_triple.getAP(), EPSILON);
+
     String output = TestSet.dump(processed_questions);
     BufferedWriter writer = new BufferedWriter(new FileWriter(new File(processed_file)));
     writer.write(output);
+    writer.write("\nConcept MAP: " + MAP_concept + "\nDocument MAP: " + MAP_document
+            + "\nTriple MAP: " + MAP_triple);
     writer.flush();
     writer.close();
 
@@ -170,7 +197,7 @@ public class CASConsumer extends CasConsumer_ImplBase {
         FP++;
       }
     }
-    return TP / (TP + FP);
+    return (double) TP / (TP + FP);
   }
 
   public double triplePrecision(List<Triple> predictions, List<Triple> gold) {
@@ -189,7 +216,7 @@ public class CASConsumer extends CasConsumer_ImplBase {
         found = false;
       }
     }
-    return TP / (TP + FP);
+    return (double) TP / (TP + FP);
   }
 
   public double recall(List<String> predictions, List<String> gold) {
@@ -200,7 +227,7 @@ public class CASConsumer extends CasConsumer_ImplBase {
       }
     }
     int FN = gold.size() - TP;
-    return TP / (TP + FN);
+    return (double) TP / (TP + FN);
   }
 
   public double tripleRecall(List<Triple> predictions, List<Triple> gold) {
@@ -213,7 +240,7 @@ public class CASConsumer extends CasConsumer_ImplBase {
       }
     }
     int FN = gold.size() - TP;
-    return TP / (TP + FN);
+    return (double) TP / (TP + FN);
   }
 
   public double fMeasure(double P, double R) {
@@ -224,17 +251,21 @@ public class CASConsumer extends CasConsumer_ImplBase {
     double total = 0.0;
     int rel_total = 0;
     for (int r = 0; r < predictions.size(); r++) {
-      List<String> rList = predictions.subList(0, r);
+      List<String> rList = predictions.subList(0, r + 1);
       int rel = 0;
-      if (gold.contains(predictions.get(r))) {
+      String temp1 = predictions.get(r);
+      if (gold.contains(temp1)) {
         rel = 1;
         rel_total++;
       }
-      total += precision(rList, gold) * rel;
+      double temp = precision(rList, gold);
+      total += temp * (double) rel;
     }
-    total /= rel_total;
-    return total;
-
+    if (rel_total != 0) {
+      total /= rel_total;
+      return total;
+    }
+    return 0.0;
   }
 
   public double tripleAP(List<Triple> predictions, List<Triple> gold) {
@@ -266,13 +297,12 @@ public class CASConsumer extends CasConsumer_ImplBase {
     return answer;
   }
 
-  public double GMAP(double[] AP, double epsilon) {
-    //TODO: Fix this
+  public double GMAP(ArrayList<Double> AP, double epsilon) {
     double answer = 1.0;
-    for (int i = 0; i < AP.length; i++) {
-      answer *= (AP[i] + epsilon);
+    for (int i = 0; i < AP.size(); i++) {
+      answer *= (AP.get(i) + epsilon);
     }
-    return Math.pow(answer, (1 / AP.length));
+    return Math.pow(answer, (1 / AP.size()));
   }
 
   public HashMap<String, TestQuestion> readJSON(String filePath) {
@@ -365,7 +395,28 @@ public class CASConsumer extends CasConsumer_ImplBase {
       e_concept.addRecall(r); // recall
       e_concept.addF(fMeasure(p, r)); // f-measure
       e_concept.addAP(tripleAP(docs, goldList));
-    }
+    } /*else if (type == "snippet") {
+
+      List<Triple> docs = next.getTriples();
+      List<Triple> goldList = gold.getTriples();
+      for (String c : next.getConcepts()) {
+        if (gold.getConcepts().contains(c)) {
+          TP++;
+        } else {
+          FP++;
+        }
+      }
+      e_concept.addTP(TP);
+      e_concept.addFP(FP);
+      int FN = goldList.size() - TP;
+      e_concept.addFN(FN);
+      double p = triplePrecision(docs, goldList);
+      e_concept.addPrecision(p); // precision
+      double r = tripleRecall(docs, goldList);
+      e_concept.addRecall(r); // recall
+      e_concept.addF(fMeasure(p, r)); // f-measure
+      e_concept.addAP(tripleAP(docs, goldList));
+    }*/
   }
 
 }

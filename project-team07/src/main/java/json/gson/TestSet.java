@@ -59,7 +59,8 @@ public class TestSet {
     HashMap<String, TestQuestion> map = new HashMap<String, TestQuestion>();
     for (int i=0;i<l.size();i++){
       TestQuestion tq = l.get(i);
-      map.put(tq.getId(), tq);
+      String key = tq.getId();
+      map.put(key, tq);
     }
     return map;
   }
