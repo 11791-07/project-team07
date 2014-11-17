@@ -82,10 +82,6 @@ public class CASConsumer extends CasConsumer_ImplBase {
       for (Document doc : TypeUtil.getRankedDocuments(jcas)) {
         documents.add(doc.getUri());
       }
-      /*
-      for (Document doc : TypeUtil.getRankedDocuments(jcas)) {
-        documents.add(doc.getUri());
-      }*/
 
       // Get snippets retrieved in AE. Just make it empty, I did not extract snippets in dummy AE
       List<Snippet> snippets = new ArrayList<Snippet>();
@@ -151,7 +147,7 @@ public class CASConsumer extends CasConsumer_ImplBase {
     String output = TestSet.dump(processed_questions);
     BufferedWriter writer = new BufferedWriter(new FileWriter(new File(processed_file)));
     writer.write(output);
-    writer.write("\nConcept MAP: " + MAP_concept + "\nDocument MAP: " + MAP_document
+    System.out.println("\nConcept MAP: " + MAP_concept + "\nDocument MAP: " + MAP_document
             + "\nTriple MAP: " + MAP_triple + "\nConcept GMAP: "+GMAP_concept+"\nDocument GMAP: "+GMAP_document+"\nTriple GMAP: "+GMAP_triple);
     writer.flush();
     writer.close();
@@ -324,7 +320,8 @@ public class CASConsumer extends CasConsumer_ImplBase {
     {
       return 0.0;
     }
-    return Math.pow(answer, (1 / AP.size()));
+    answer = Math.pow((double)answer, (1 / AP.size()));
+    return answer;
   }
 
   public HashMap<String, TestQuestion> readJSON(String filePath) {
