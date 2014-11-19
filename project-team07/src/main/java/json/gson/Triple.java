@@ -52,6 +52,8 @@ public final class Triple {
     return true;
   }
 
+  //TODO create similarity method for soft evaluation metric
+  
   public String getS() {
     return s;
   }

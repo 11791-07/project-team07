@@ -1,6 +1,7 @@
 package util;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class EvaluationObject {
 
@@ -12,9 +13,15 @@ public class EvaluationObject {
 
   private ArrayList<Double> precision;
 
+  private ArrayList<Double> softPrecision;
+
   private ArrayList<Double> recall;
 
+  private ArrayList<Double> softRecall;
+
   private ArrayList<Double> F;
+
+  private ArrayList<Double> softF;
 
   private ArrayList<Integer> TP;
 
@@ -35,7 +42,6 @@ public class EvaluationObject {
     this.TP = TP;
     this.FP = FP;
     this.FN = FN;
-
   }
 
   public EvaluationObject() {
@@ -121,6 +127,133 @@ public class EvaluationObject {
 
   public void addFP(int FP) {
     this.FP.add(FP);
+  }
+
+  public void runEvaluation(List<? extends Object> predictions, List<? extends Object> gold) {
+    int TP = 0, FP = 0, FN = 0;
+    for (Object p : predictions) {
+      for (Object g : gold) {
+        if (g.equals(p)) { // hard metric
+          TP++;
+        }
+        /*
+         * else if (){//TODO soft metric
+         * 
+         * }
+         */
+        else {
+          FP++;
+        }
+      }
+    }
+    addFN(gold.size() - TP);
+    addFP(FP);
+    addTP(TP);
+    double P = precision(TP, FP);
+    double R = recall(TP, FN);
+    fMeasure(P, R);
+  }
+
+  public double precision(double TP, double FP) {
+    double pre = 0.0;
+    if (TP + FP != 0) {
+      pre = (double) TP / (TP + FP);
+    }
+    this.addPrecision(pre);
+    return pre;
+  }
+
+  public double precision(List<? extends Object> predictions, List<? extends Object> gold) {
+    int TP = 0, FP = 0;
+    for (Object p : predictions) {
+      for (Object g : gold) {
+        if (g.equals(p)) { // hard metric
+          TP++;
+        }
+        /*
+         * else if (){//TODO soft metric
+         * 
+         * }
+         */
+        else {
+          FP++;
+        }
+      }
+    }
+    if (TP + FP == 0) {
+      return 0.0;
+    }
+    return (double) TP / (TP + FP);
+
+  }
+
+  public double recall(double TP, double FN) {
+    double re = 0.0;
+    if (TP + FN != 0) {
+      re = (double) TP / (TP + FN);
+    }
+    this.addRecall(re);
+    return re;
+  }
+
+  public void fMeasure(double P, double R) {
+    if (P + R == 0) {
+      this.addF(0.0);
+    } else {
+      this.addF((2 * P * R) / (P + R));
+    }
+  }
+
+  public void AP(List<? extends Object> predictions, List<? extends Object> gold) {
+    double total = 0.0;
+    int rel_total = 0;
+    for (int r = 0; r < predictions.size(); r++) {
+      List<Object> rList = (List<Object>) predictions.subList(0, r + 1);
+      int rel = 0;
+      Object temp1 = predictions.get(r);
+      for (Object g : gold) {
+        if (g.equals(temp1)) {
+          rel = 1;
+          rel_total++;
+        }
+        /*
+         * else if (){//soft metric
+         * 
+         * }
+         */
+      }
+      double temp = precision(rList, gold);
+      total += temp * (double) rel;
+    }
+    if (rel_total != 0) {
+      total /= rel_total;
+    } else {
+      total = 0.0;
+    }
+    this.addAP(total);
+  }
+
+  public void MAP() {
+    for (int i = 0; i < this.AP.size(); i++) {
+      this.MAP += this.AP.get(i);
+    }
+    if (this.AP.size() == 0) {
+      this.MAP = 0.0;
+    } else {
+      this.MAP /= this.AP.size();
+    }
+  }
+
+  public void GMAP(double epsilon) {
+    double answer = 1.0;
+    for (int i = 0; i < this.AP.size(); i++) {
+      answer *= (this.AP.get(i) + epsilon);
+    }
+    if (this.AP.size() == 0) {
+      GMAP = 0.0;
+    } else {
+      GMAP = Math.pow(answer, (1.0 / this.AP.size()));
+    }
   }
 
 }
