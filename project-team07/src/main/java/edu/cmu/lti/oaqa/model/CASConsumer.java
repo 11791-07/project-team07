@@ -16,12 +16,17 @@ import java.util.List;
 
 import json.gson.QuestionType;
 import json.gson.Snippet;
+//import json.gson.Snippet;
 import json.gson.TestQuestion;
 import json.gson.TestSet;
-import json.gson.Triple;
+//import json.gson.Triple;
+
 
 import org.apache.uima.cas.CAS;
 import org.apache.uima.cas.CASException;
+import org.apache.uima.cas.FSIterator;
+import org.apache.uima.cas.Type;
+import org.apache.uima.cas.TypeSystem;
 import org.apache.uima.collection.CasConsumer_ImplBase;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.ResourceInitializationException;
@@ -31,6 +36,7 @@ import org.apache.uima.util.ProcessTrace;
 import util.TypeUtil;
 import util.EvaluationObject;
 import edu.cmu.lti.oaqa.type.kb.Concept;
+import edu.cmu.lti.oaqa.type.kb.Triple;
 import edu.cmu.lti.oaqa.type.input.Question;
 import edu.cmu.lti.oaqa.type.retrieval.ConceptSearchResult;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
@@ -57,10 +63,10 @@ public class CASConsumer extends CasConsumer_ImplBase {
 
   public void initialize() throws ResourceInitializationException {
     processed_questions = new ArrayList<TestQuestion>();
-    processed_file = "src/main/resources/Phase1_output.json";
-    // processed_file = "src/main/resources/Phase1_output_single.json";
-    String gold_standard_string = "src/main/resources/BioASQ-SampleData1B.json";
-    // String gold_standard_string = "src/main/resources/BioASQ-SampleData1B_single.json";
+    // processed_file = "src/main/resources/Phase1_output.json";
+    processed_file = "src/main/resources/Phase1_output_single.json";
+    // String gold_standard_string = "src/main/resources/BioASQ-SampleData1B.json";
+    String gold_standard_string = "src/main/resources/BioASQ-SampleData1B_single.json";
     gold_standard = readJSON(gold_standard_string);
     e_concept = new EvaluationObject();
     e_document = new EvaluationObject();
@@ -72,6 +78,7 @@ public class CASConsumer extends CasConsumer_ImplBase {
   public void processCas(CAS aJcas) throws ResourceProcessException {
     JCas jcas;
     Question question;
+
     try {
       jcas = aJcas.getJCas();
       // Get basic question information
@@ -82,32 +89,31 @@ public class CASConsumer extends CasConsumer_ImplBase {
 
       // Get documents retrieved in AE
       List<String> documents = new ArrayList<String>();
-      for (Document doc : TypeUtil.getRankedDocuments(jcas)) {
-        documents.add(doc.getUri());
+      for (Object doc : getList(Document.type, jcas)) {
+        Document d = (Document)doc;
+        documents.add(d.getUri());
       }
 
-      // Get snippets retrieved in AE
-      List<Snippet> snippets = new ArrayList<Snippet>();
-      for (Passage snip : TypeUtil.getRankedPassages(jcas)) {
-        snippets.addAll((Collection<? extends Snippet>) snip);
-      }
-
-      // Get concepts retrieved in AE
       List<String> concepts = new ArrayList<String>();
-      for (ConceptSearchResult concept : TypeUtil.getRankedConceptSearchResults(jcas)) {
-        concepts.add(concept.getUri());
+      for (Object doc : getList(Concept.type, jcas)) {
+        Concept c = (Concept)doc;
+        concepts.add(c.getUris().getNthElement(0)); //get top element
       }
 
-      // Get triples retrieved in AE
-      List<Triple> json_triples = new ArrayList<Triple>();
-      for (TripleSearchResult triple : TypeUtil.getRankedTripleSearchResults(jcas)) {
-        Triple json_triple = new Triple(triple.getTriple().getObject(), triple.getTriple()
-                .getPredicate(), triple.getTriple().getSubject());
-        json_triples.add(json_triple);
+      List<json.gson.Triple> triples = new ArrayList<json.gson.Triple>();
+      for (Object doc : getList(Triple.type, jcas)) {
+        Triple trip = (Triple)doc;
+        json.gson.Triple json_triple = new json.gson.Triple(trip.getObject(), trip.getPredicate(),trip.getSubject());
+        triples.add(json_triple);
       }
 
-      TestQuestion processed_question = new TestQuestion(id, body, type, documents, snippets,
-              concepts, json_triples, "");
+      List<Snippet> snippets = new ArrayList<Snippet>();
+      for (Object doc : getList(Passage.type, jcas)) {
+        Snippet s = (Snippet)doc;
+        snippets.add(s);
+      }
+
+      TestQuestion processed_question = new TestQuestion(id, body, type, documents, snippets, concepts, triples, "");
       processed_questions.add(processed_question);
 
     } catch (CASException e) {
@@ -187,8 +193,6 @@ public class CASConsumer extends CasConsumer_ImplBase {
   }
 
   public void solveIt(TestQuestion gold, TestQuestion next, String type) {
-    int TP = 0;
-    int FP = 0;
     if (type == "concept") {
       List<String> docs = next.getConcepts();
       List<String> goldList = gold.getConcepts();
@@ -202,8 +206,8 @@ public class CASConsumer extends CasConsumer_ImplBase {
         return;
       e_document.runEvaluation(docs, goldList);
     } else if (type == "triple") {
-      List<Triple> docs = next.getTriples();
-      List<Triple> goldList = gold.getTriples();
+      List<json.gson.Triple> docs = next.getTriples();
+      List<json.gson.Triple> goldList = gold.getTriples();
       if (docs.isEmpty())
         return;
       e_triple.runEvaluation(docs, goldList);
@@ -215,6 +219,15 @@ public class CASConsumer extends CasConsumer_ImplBase {
       e_snippet.runEvaluation(docs, goldList);
     }
 
+  }
+
+  public List<Object> getList(int type, JCas jcas) {
+    List<Object> l = new ArrayList<Object>();
+    FSIterator fsi = jcas.getJFSIndexRepository().getAllIndexedFS(type);
+    while (fsi.hasNext()) {
+      l.add(fsi.next());
+    }
+    return l;
   }
 
 }

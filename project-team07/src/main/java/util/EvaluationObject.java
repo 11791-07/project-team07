@@ -136,11 +136,8 @@ public class EvaluationObject {
         if (g.equals(p)) { // hard metric
           TP++;
         }
-        /*
-         * else if (){//TODO soft metric
-         * 
-         * }
-         */
+        //else if (){//TODO soft metric
+        //}
         else {
           FP++;
         }
@@ -170,11 +167,8 @@ public class EvaluationObject {
         if (g.equals(p)) { // hard metric
           TP++;
         }
-        /*
-         * else if (){//TODO soft metric
-         * 
-         * }
-         */
+        // else if (){//TODO soft metric
+        // }
         else {
           FP++;
         }
