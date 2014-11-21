@@ -92,12 +92,6 @@ public class CASConsumer extends CasConsumer_ImplBase {
       for (Document doc : TypeUtil.getRankedDocuments(jcas)) {
         documents.add(doc.getUri());
       }
-
-      /*List<String> concepts = new ArrayList<String>();
-      for (Object doc : getList(Concept.type, jcas)) {
-        Concept c = (Concept)doc;
-        concepts.add(c.getUris().getNthElement(0)); //get top element
-      }*/
       
       List<String> concepts = new ArrayList<String>();
       for (Concept concept : TypeUtil.getConcept(jcas)) {
@@ -141,11 +135,11 @@ public class CASConsumer extends CasConsumer_ImplBase {
     e_concept.MAP();
     e_document.MAP();
     e_triple.MAP();
-    //e_snippet.SnippetMAP();
+    e_snippet.MAP();
     e_concept.GMAP(EPSILON);
     e_document.GMAP(EPSILON);
     e_triple.GMAP(EPSILON);
-  //e_snippet.SnippetGMAP(EPSILON);
+    e_snippet.GMAP(EPSILON);
 
     String output = TestSet.dump(processed_questions);
     BufferedWriter writer = new BufferedWriter(new FileWriter(new File(processed_file)));

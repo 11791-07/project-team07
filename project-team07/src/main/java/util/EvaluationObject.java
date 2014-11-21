@@ -183,6 +183,25 @@ public class EvaluationObject {
     return (double) TP / (TP + FP);
 
   }
+  
+  public double snippetPrecision(List<? extends Object> S, List<? extends Object> G) {
+    int TP = 0;
+    for (Object s : S) {
+      for (Object g : G) {
+        if (g.equals(s)) { // hard metric
+          TP++;
+        }
+        //else if (){//TODO soft metric
+        //}
+      }
+    }
+    double P = (double)TP/S.size();
+    if (TP== 0) {
+      return 0.0;
+    }
+    return P;
+
+  }
 
   public double recall(double TP, double FN) {
     double re = 0.0;
@@ -253,7 +272,7 @@ public class EvaluationObject {
          * }
          */
       }
-      double temp = precision(rList, gold); //TODO fix this to be Snippet precision
+      double temp = snippetPrecision(rList, gold);
       total += temp * (double) rel;
     }
     if (rel_total != 0) {
