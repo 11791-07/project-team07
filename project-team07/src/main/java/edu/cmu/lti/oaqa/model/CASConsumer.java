@@ -59,13 +59,13 @@ public class CASConsumer extends CasConsumer_ImplBase {
 
   private EvaluationObject e_snippet;
 
-  private static double EPSILON = 0.1;
+  private static double EPSILON = 0.001;
 
   public void initialize() throws ResourceInitializationException {
     processed_questions = new ArrayList<TestQuestion>();
-    // processed_file = "src/main/resources/Phase1_output.json";
+    //processed_file = "src/main/resources/Phase1_output.json";
     processed_file = "src/main/resources/Phase1_output_single.json";
-    // String gold_standard_string = "src/main/resources/BioASQ-SampleData1B.json";
+    //String gold_standard_string = "src/main/resources/BioASQ-SampleData1B.json";
     String gold_standard_string = "src/main/resources/BioASQ-SampleData1B_single.json";
     gold_standard = readJSON(gold_standard_string);
     e_concept = new EvaluationObject();
@@ -89,15 +89,19 @@ public class CASConsumer extends CasConsumer_ImplBase {
 
       // Get documents retrieved in AE
       List<String> documents = new ArrayList<String>();
-      for (Object doc : getList(Document.type, jcas)) {
-        Document d = (Document)doc;
-        documents.add(d.getUri());
+      for (Document doc : TypeUtil.getRankedDocuments(jcas)) {
+        documents.add(doc.getUri());
       }
 
-      List<String> concepts = new ArrayList<String>();
+      /*List<String> concepts = new ArrayList<String>();
       for (Object doc : getList(Concept.type, jcas)) {
         Concept c = (Concept)doc;
         concepts.add(c.getUris().getNthElement(0)); //get top element
+      }*/
+      
+      List<String> concepts = new ArrayList<String>();
+      for (Concept concept : TypeUtil.getConcept(jcas)) {
+        concepts.add(concept.getUris().getNthElement(0));
       }
 
       List<json.gson.Triple> triples = new ArrayList<json.gson.Triple>();
@@ -137,9 +141,11 @@ public class CASConsumer extends CasConsumer_ImplBase {
     e_concept.MAP();
     e_document.MAP();
     e_triple.MAP();
+    //e_snippet.SnippetMAP();
     e_concept.GMAP(EPSILON);
     e_document.GMAP(EPSILON);
     e_triple.GMAP(EPSILON);
+  //e_snippet.SnippetGMAP(EPSILON);
 
     String output = TestSet.dump(processed_questions);
     BufferedWriter writer = new BufferedWriter(new FileWriter(new File(processed_file)));
@@ -205,7 +211,7 @@ public class CASConsumer extends CasConsumer_ImplBase {
       if (docs.isEmpty())
         return;
       e_document.runEvaluation(docs, goldList);
-    } else if (type == "triple") {
+    }else if (type == "triple") {
       List<json.gson.Triple> docs = next.getTriples();
       List<json.gson.Triple> goldList = gold.getTriples();
       if (docs.isEmpty())
@@ -216,7 +222,7 @@ public class CASConsumer extends CasConsumer_ImplBase {
       List<Snippet> goldList = gold.getSnippets();
       if (docs.isEmpty())
         return;
-      e_snippet.runEvaluation(docs, goldList);
+      e_snippet.runSnippetEvaluation(docs, goldList);
     }
 
   }

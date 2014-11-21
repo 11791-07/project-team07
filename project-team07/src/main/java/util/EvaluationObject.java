@@ -3,6 +3,8 @@ package util;
 import java.util.ArrayList;
 import java.util.List;
 
+import json.gson.Snippet;
+
 public class EvaluationObject {
 
   private ArrayList<Double> AP;
@@ -149,6 +151,7 @@ public class EvaluationObject {
     double P = precision(TP, FP);
     double R = recall(TP, FN);
     fMeasure(P, R);
+    AP(predictions, gold);
   }
 
   public double precision(double TP, double FP) {
@@ -226,6 +229,40 @@ public class EvaluationObject {
     }
     this.addAP(total);
   }
+  
+  
+  public void SnippetAP(List<Snippet> predictions, List<Snippet> gold) {
+    double total = 0.0;
+    int rel_total = 0;
+    for (int r = 0; r < predictions.size(); r++) {
+      List<Snippet> rList = (List<Snippet>) predictions.subList(0, r + 1);
+      int rel = 0;
+      Snippet temp1 = predictions.get(r);
+      int begin = temp1.getOffsetInBeginSection();
+      int end = temp1.getOffsetInEndSection();
+      for (Snippet g : gold) {
+        int g_begin = g.getOffsetInBeginSection();
+        int g_end = g.getOffsetInEndSection();
+        if (g_begin > begin || end > g_begin){
+          rel = 1;
+          rel_total++;
+        }
+        /*
+         * else if (){//soft metric
+         * 
+         * }
+         */
+      }
+      double temp = precision(rList, gold); //TODO fix this to be Snippet precision
+      total += temp * (double) rel;
+    }
+    if (rel_total != 0) {
+      total /= rel_total;
+    } else {
+      total = 0.0;
+    }
+    this.addAP(total);
+  }
 
   public void MAP() {
     for (int i = 0; i < this.AP.size(); i++) {
@@ -248,6 +285,26 @@ public class EvaluationObject {
     } else {
       GMAP = Math.pow(answer, (1.0 / this.AP.size()));
     }
+  }
+
+  public void runSnippetEvaluation(List<Snippet> S, List<Snippet> G) {
+    int TP = 0;
+    for (Object s : S) {
+      for (Object g : G) {
+        if (g.equals(s)) { // hard metric
+          TP++;
+        }
+        //else if (){//TODO soft metric
+        //}
+      }
+    }
+    double P = (double)TP/S.size();
+    double R = (double)TP/G.size();
+    double F = (2*P*R)/(P+R);
+    this.addPrecision(P);
+    this.addRecall(R);
+    this.addF(F);
+    SnippetAP(S, G);
   }
 
 }
