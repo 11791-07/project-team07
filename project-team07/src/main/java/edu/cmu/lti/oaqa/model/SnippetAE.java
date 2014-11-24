@@ -51,6 +51,7 @@ public class SnippetAE extends JCasAnnotator_ImplBase {
 		
 		/* For Debugging.
 		List<String> pMIDlist = new ArrayList<String>();
+	    
 	    for (Document doc : TypeUtil.getRankedDocuments(jcas)) {
 	    	String[] buf = doc.getUri().split("/");
 	    	pMIDlist.add(buf[buf.length-1]);
