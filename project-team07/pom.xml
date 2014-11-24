@@ -121,7 +121,7 @@
 		<dependency>
 			<groupId>edu.stanford.nlp</groupId>
 			<artifactId>stanford-corenlp</artifactId>
-			<version>3.4</version>
+			<version>3.5.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
@@ -163,6 +163,11 @@
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>18.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.lemurproject</groupId>
+			<artifactId>indri</artifactId>
+			<version>5.2</version>
 		</dependency>
 	</dependencies>
 
