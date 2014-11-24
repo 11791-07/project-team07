@@ -321,7 +321,7 @@ public class Evaluation {
     			}
     		}
     		P_r[i] = Rel_r[i] + (i==0? 0 : P_r[i-1]);
-    		S_r[i] = s.getOffsetInEndSection()-s.getOffsetInEndSection()+1 + (i==0? 0 : S_r[i-1]);
+    		S_r[i] = s.getOffsetInEndSection()-s.getOffsetInBeginSection()+1 + (i==0? 0 : S_r[i-1]);
     	}
     	for(Snippet t : ref_snippet){
     		G = G + t.getOffsetInEndSection()-t.getOffsetInEndSection()+1;
@@ -330,7 +330,6 @@ public class Evaluation {
     	for(int i=0;i<hyp_snippet.size();i++){
     		System.out.print(P_r[i]+"    "+S_r[i]);
     	}
-    	System.out.println("\n------------------------------");
     	for(int i=0;i<hyp_snippet.size();i++){
     		P_r[i] = P_r[i]/S_r[i];
     		AP = AP + P_r[i]*(Rel_r[i]==0? 0 :1);
