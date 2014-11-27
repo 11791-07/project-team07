@@ -338,6 +338,13 @@ public class TypeFactory {
             TypeConstants.RANK_UNKNOWN, TypeConstants.QUERY_STRING_UNKNOWN,
             TypeConstants.SEARCH_ID_UNKNOWN, new ArrayList<>(), TypeConstants.TITLE_UNKNOWN, docId);
   }
+  
+  //@Hao
+  public static Document createDocument(JCas jcas, String uri, String docId, double score, String text_abstract) {
+	    return createDocument(jcas, uri, score, text_abstract,
+	            TypeConstants.RANK_UNKNOWN, TypeConstants.QUERY_STRING_UNKNOWN,
+	            TypeConstants.SEARCH_ID_UNKNOWN, new ArrayList<>(), TypeConstants.TITLE_UNKNOWN, docId);
+	  }
 
   public static Document createDocument(JCas jcas, String uri) {
     return createDocument(jcas, uri, TypeConstants.SCORE_UNKNOWN, TypeConstants.TEXT_UNKNOWN,
@@ -371,6 +378,15 @@ public class TypeFactory {
   public static Passage createPassage(JCas jcas, String uri, String text, String docId,
           int offsetInBeginSection, int offsetInEndSection, String beginSection, String endSection) {
     return createPassage(jcas, uri, TypeConstants.SCORE_UNKNOWN, text, TypeConstants.RANK_UNKNOWN,
+            TypeConstants.QUERY_STRING_UNKNOWN, TypeConstants.SEARCH_ID_UNKNOWN, new ArrayList<>(),
+            TypeConstants.TITLE_UNKNOWN, docId, offsetInBeginSection, offsetInEndSection,
+            beginSection, endSection, TypeConstants.ASPECTS_UNKNOWN);
+  }
+  
+  //Hao
+  public static Passage createPassage(JCas jcas, double score, String uri, String text, String docId,
+          int offsetInBeginSection, int offsetInEndSection, String beginSection, String endSection) {
+    return createPassage(jcas, uri, score, text, TypeConstants.RANK_UNKNOWN,
             TypeConstants.QUERY_STRING_UNKNOWN, TypeConstants.SEARCH_ID_UNKNOWN, new ArrayList<>(),
             TypeConstants.TITLE_UNKNOWN, docId, offsetInBeginSection, offsetInEndSection,
             beginSection, endSection, TypeConstants.ASPECTS_UNKNOWN);

@@ -74,6 +74,10 @@ public class GoPubMedServiceExample {
     }
     PubMedSearchServiceResponse.Result pubmedResult = service.findPubMedCitations(text, 0);
     System.out.println(pubmedResult.getSize());
+    
+    //for(PubMedSearchServiceResponse.Uri uri: pubmedResult.ge){
+    //	doc.getDocumentAbstract();
+    //}
 
   }
 }

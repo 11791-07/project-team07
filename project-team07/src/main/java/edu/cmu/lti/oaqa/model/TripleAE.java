@@ -33,14 +33,12 @@ public class TripleAE extends JCasAnnotator_ImplBase {
 	@Override
 	public void process(JCas jcas) throws AnalysisEngineProcessException {
 		// TODO Auto-generated method stub
-		/*
-		 * Extract Question information
-		 */
 		Question question = TypeUtil.getQuestion(jcas);
 		String qID = question.getId();
 		String qType = question.getQuestionType();
 		String qText = question.getText();
-        try {
+        /*
+		try {
 	        String triple_keyword = qText;
 	        LinkedLifeDataServiceResponse.Result linkedLifeDataResult = service
 	                .findLinkedLifeDataEntitiesPaged(triple_keyword, 0);
@@ -54,7 +52,6 @@ public class TripleAE extends JCasAnnotator_ImplBase {
         } catch (Exception e){
         	System.out.println("Failed to extract triples");
         }
-
+        */
 	}
-
 }

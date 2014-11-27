@@ -84,6 +84,15 @@ public class TypeUtil {
   public static Collection<ConceptSearchResult> getRankedConceptSearchResults(JCas jcas) {
     return rankedSearchResultsByRank(JCasUtil.select(jcas, ConceptSearchResult.class));
   }
+  //@Hao
+  public static Collection<ConceptSearchResult> getScoredConceptSearchResults(JCas jcas, int hitsize) {
+	    return rankedSearchResultsByScore(JCasUtil.select(jcas, ConceptSearchResult.class),hitsize);
+  }
+  //@Hao
+  public static Collection<Document> getScoredDocument(JCas jcas, int hitsize) {
+	    return rankedSearchResultsByScore(JCasUtil.select(jcas, Document.class),hitsize);
+  }
+  
 
   public static Collection<TripleSearchResult> getRankedTripleSearchResults(JCas jcas) {
     return rankedSearchResultsByRank(JCasUtil.select(jcas, TripleSearchResult.class));
@@ -96,7 +105,12 @@ public class TypeUtil {
   public static Collection<Passage> getRankedPassages(JCas jcas) {
     return rankedSearchResultsByRank(JCasUtil.select(jcas, Passage.class));
   }
-
+  
+  //@Hao
+  public static Collection<Passage> getScoredPassage(JCas jcas, int hitsize) {
+	    return rankedSearchResultsByScore(JCasUtil.select(jcas, Passage.class),hitsize);
+  }
+  
   public static Collection<Answer> getAnswers(JCas jcas) {
     return JCasUtil.select(jcas, Answer.class);
   }
