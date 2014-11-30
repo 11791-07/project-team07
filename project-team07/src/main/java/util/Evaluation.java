@@ -261,6 +261,7 @@ public class Evaluation {
     public double AveragePrecisionString(List<String> hyp_doc, List<String> ref_doc){
     	double[] P_r = new double[hyp_doc.size()];
     	int[] Rel_r = new int[hyp_doc.size()];
+    	
     	for(int i=0;i<hyp_doc.size();i++){
     		String target = hyp_doc.get(i);
     		for(String ans : ref_doc){
@@ -327,9 +328,11 @@ public class Evaluation {
     		G = G + t.getOffsetInEndSection()-t.getOffsetInEndSection()+1;
     	}
     	double AP = 0;
+    	/*
     	for(int i=0;i<hyp_snippet.size();i++){
     		System.out.print(P_r[i]+"    "+S_r[i]);
     	}
+    	*/
     	for(int i=0;i<hyp_snippet.size();i++){
     		P_r[i] = P_r[i]/S_r[i];
     		AP = AP + P_r[i]*(Rel_r[i]==0? 0 :1);
@@ -341,21 +344,28 @@ public class Evaluation {
     public void PrintDebug(String type, List<Double> precision, List<Double> recall, List<Double> average_precision ){
     	System.out.println("*********"+type+" Retrieval Summary For Each Question**************");
     	System.out.println("Precision: ");
-    	for(int i=0; i < precision.size();i++){
-    		System.out.print(precision.get(i)+"  ");
+    	System.out.print("[");
+    	for(int i=0; i < precision.size()-1;i++){
+    		System.out.print(precision.get(i)+",  ");
     	}
+    	System.out.print(precision.get(precision.size()-1)+"]");
     	System.out.println();
     	
+    	
     	System.out.println("Recall: ");
-    	for(int i=0; i < recall.size();i++){
-    		System.out.print(recall.get(i)+"  ");
+    	System.out.print("[");
+    	for(int i=0; i < recall.size()-1;i++){
+    		System.out.print(recall.get(i)+",  ");
     	}
+    	System.out.print(recall.get(recall.size()-1)+"]");
     	System.out.println();
     	
     	System.out.println("Average Precision: ");
-    	for(int i=0; i < average_precision.size();i++){
-    		System.out.print(average_precision.get(i)+"  ");
+    	System.out.print("[");
+    	for(int i=0; i < average_precision.size()-1;i++){
+    		System.out.print(average_precision.get(i)+",  ");
     	}
+    	System.out.print(average_precision.get(average_precision.size()-1)+"]");
     	System.out.println();
     }
 	//

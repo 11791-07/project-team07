@@ -1,0 +1,69 @@
+{
+    "questions": [
+        {
+            "body": "Is Rheumatoid Arthritis more common in men or women?",
+            "type": "factoid",
+            "id": "5118dd1305c10fae75000001"
+        },
+        {
+            "body": "What is the most prominent sequence consensus for the polyadenylation site?",
+            "type": "list",
+            "id": "5133b9455274a5fb0700000c"
+        },
+        {
+            "body": "Which extra thyroid tissues have thyrotropin (TSH) receptors?",
+            "type": "list",
+            "id": "513f45abbee46bd34c000013"
+        },
+        {
+            "body": "What is the methyl donor of DNA (cytosine-5)-methyltransferases?",
+            "type": "factoid",
+            "id": "51404dd723fec90375000002"
+        },
+        {
+            "body": "What is the mechanism of action of anticoagulant medication Dabigatran?",
+            "type": "summary",
+            "id": "51485a4dd24251bc0500002a"
+        },
+        {
+            "body": "Is Mammaprint approved by the United States Food and Drug Administration?",
+            "type": "yesno",
+            "id": "51487821d24251bc0500002f"
+        },
+        {
+            "body": "Which medication should be administered when managing patients with suspected acute opioid overdose?",
+            "type": "factoid",
+            "id": "5149f494d24251bc0500004c"
+        },
+        {
+            "body": "Does the Oncotype DX test work with paraffin embedded tissues?",
+            "type": "yesno",
+            "id": "514a0f0ad24251bc05000052"
+        },
+        {
+            "body": "Is depression associated with poor prognosis of brain tumor patients?",
+            "type": "yesno",
+            "id": "514cc8dcd24251bc05000066"
+        },
+        {
+            "body": "Does HER2 under-expression lead to favorable response to trastuzumab?",
+            "type": "yesno",
+            "id": "51542eacd24251bc05000084"
+        },
+       {
+            "body": "Are there any desmins present in plants?",
+            "type": "yesno",
+            "id": "5162e011298dcd4e51000049"
+        },
+        {
+            "body": "Is it possible to detect survivin protein expression in normal human adult tissues?",
+            "type": "summary",
+            "id": "516425ff298dcd4e51000051"
+        },
+        {
+            "body": "How do histone methyltransferases cause histone modification?",
+            "type": "summary",
+            "id": "51659356298dcd4e5100005a"
+        }
+    ]
+}

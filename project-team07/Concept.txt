@@ -1,0 +1,117 @@
+**** Is Rheumatoid Arthritis more common in men or women?****
+Arthritis, Rheumatoid  ###  rheumatoid arthritis  ###  Rheumatoid Arthritis, Juvenile  ###  Augmented in rheumatoid arthritis 1  ###  juvenile rheumatoid arthritis  ###  Men  ###  
+
+
+**** Are there any DNMT3 proteins present in plants?****
+ani  ###  Plant Proteins  ###  ANI  ###  ani-1  ###  ani-2  ###  ani-3  ###  
+
+
+**** What is the most prominent sequence consensus for the polyadenylation site?****
+Consensus Sequence  ###  Prominal  ###  Interferon consensus sequence-binding protein  ###  Interferon consensus sequence-binding protein  ###  Interferon consensus sequence-binding protein  ###  Consensus  ###  
+
+
+**** What is the function of the mammalian gene Irg1?****
+IRG1  ###  Irg1  ###  Genes  ###  A Gene  ###  genE  ###  Mammalian toxin  ###  
+
+
+**** Is thrombophilia related to increased risk of miscarriage?****
+Miscarriage  ###  Thrombophilia  ###  thrombophilia  ###  Risk  ###  Miscarriage, Recurrent  ###  Risk Factors  ###  
+
+
+**** Which extra thyroid tissues have thyrotropin (TSH) receptors?****
+Receptors, Thyrotropin  ###  Thyrotropin receptor  ###  Thyrotropin receptor  ###  Thyrotropin receptor  ###  Thyrotropin receptor  ###  Thyrotropin receptor  ###  
+
+
+**** What is the methyl donor of DNA (cytosine-5)-methyltransferases?****
+DNA (Cytosine-5-)-Methyltransferase  ###  DNA (cytosine-5)-methyltransferase  ###  DNA (cytosine-5)-methyltransferase 1  ###  DNA (cytosine-5)-methyltransferase 1  ###  DNA (cytosine-5)-methyltransferase 1  ###  DNA (cytosine-5)-methyltransferase 1  ###  
+
+
+**** Super-SILAC is a method used in quantitative proteomics. What is the super-SILAC mix?
+(SILAC: Stable Isotopic labelling by aminoacids in cell culture)****
+Labeling, Stable Isotope  ###  Cell Culture  ###  Cells, Cultured  ###  Stable Population Methods  ###  "Nasaruplase (cell culture)"  ###  Proteome  ###  
+
+
+**** Tumors of which three organs are classically associated with the multiple endocrine neoplasia type 1 syndrome?****
+multiple endocrine neoplasia type 1  ###  Multiple Endocrine Neoplasia Type 1  ###  Multiple Endocrine Neoplasia Syndromes  ###  Multiple Endocrine Neoplasia Type 2  ###  Multiple Endocrine Neoplasia Type 2b  ###  Multiple endocrine neoplasia, type 3  ###  
+
+
+**** What is the mechanism of action of anticoagulant medication Dabigatran?****
+Pharmacological Mechanisms of Action  ###  Anticoagulants  ###  "Dabigatran"  ###  medical disorder  ###  Mechanics  ###  Medicalization  ###  
+
+
+**** Is Mammaprint approved by the United States Food and Drug Administration?****
+United States Food and Drug Administration  ###  Food and Drug Administration Drug Approval  ###  Food and Drug Administration Device Approval  ###  United States Veterans' Administration  ###  United States  ###  United States Alcohol, Drug Abuse, and Mental Health Administration  ###  
+
+
+**** Which acetylcholinesterase inhibitors are used for treatment of myasthenia gravis?****
+Myasthenia Gravis  ###  myasthenia gravis  ###  Inhibitors, Acetylcholinesterase  ###  Myasthenia gravis autoantigen  ###  Congenital Myasthenia Gravis  ###  Myasthenia Gravis, Neonatal  ###  
+
+
+**** Which medication should be administered when managing patients with suspected acute opioid overdose?****
+Patient Care Management  ###  Medication Therapy Management  ###  Manage  ###  Opioids  ###  medical disorder  ###  Practice Management, Medical  ###  
+
+
+**** Does the Oncotype DX test work with paraffin embedded tissues?****
+Paraffin Embedding  ###  Tissue Embedding  ###  Paraffin  ###  DOE  ###  "Paraffin"  ###  Work  ###  
+
+
+**** Is depression associated with poor prognosis of brain tumor patients?****
+Tumors, Brain  ###  Prognosis  ###  Brain tumor protein  ###  Brain tumor-associated protein BAG  ###  tumor of the Brain  ###  Depression  ###  
+
+
+**** What is known about the reimbursement of Viagra****
+Viagra  ###  Reimbursement Mechanisms  ###  Reimbursement, Incentive  ###  Prospective Reimbursement  ###  Reimbursement, Disproportionate  ###  Insurance, Health, Reimbursement  ###  
+
+
+**** Does HER2 under-expression lead to favorable response to trastuzumab?****
+Trastuzumab  ###  HER2  ###  HER2  ###  HER2  ###  HER2  ###  HER2  ###  
+
+
+**** Can Alzheimer's disease related miRNAs be detected in patients' blood?****
+Alzheimer Disease  ###  Alzheimer's disease  ###  miRNA  ###  Diseases, Blood  ###  Alzheimer disease amyloid protein  ###  Blood disease  ###  
+
+
+**** Which antiepileptic drug is most strongly associated with spina bifida? ****
+Bifida, Spina  ###  spina bifida  ###  Antiepileptic Drugs  ###  Spina Bifida, Open  ###  Spina Bifida, Occult  ###  Protein MOST-1  ###  
+
+
+**** Where in the cell do we find the protein Cep135?****
+FIND  ###  Cep135  ###  Cep135  ###  CEP135  ###  Protein Dos  ###  Protein Dos  ###  
+
+
+**** In which isochores are Alu elements enriched?****
+Alu Elements  ###  Isochores  ###  Element, IS  ###  Elements  ###  As element  ###  Be element  ###  
+
+
+**** Which forms of cancer is the Tpl2 gene associated with?****
+Cancer-associated gene protein  ###  Cancer-associated gene protein  ###  Cancer-associated gene 1 protein  ###  Tpl2  ###  Cancer-associated gene 1 protein homolog  ###  Cancer-associated gene 1 protein homolog  ###  
+
+
+**** What is the INSURE procedure in premature babies.****
+BABIE  ###  Insurance  ###  Insurers  ###  babI  ###  babI  ###  babI  ###  
+
+
+**** Which species may be used for the biotechnological production of itaconic acid?****
+Biotechnology  ###  "itaconic acid"  ###  mai  ###  MAI  ###  mai-1  ###  mai-2  ###  
+
+
+**** What is the role of TRH in hypertension?****
+Role  ###  TRH  ###  TRH  ###  trh  ###  Trh  ###  TRH  ###  
+
+
+**** Which histone marks are deposited by Set7?****
+SET7  ###  SET7  ###  set7  ###  Set7  ###  SET7  ###  MARK  ###  
+
+
+**** Are there any desmins present in plants?****
+Desmin  ###  Desmin  ###  Desmin  ###  Desmin  ###  Desmin  ###  Desmin  ###  
+
+
+**** Is it possible to detect survivin protein expression in normal human adult tissues?****
+Survivin  ###  Survivin  ###  Normality  ###  human aortic preferentially expressed protein 1  ###  YL-1 protein, human  ###  Adult  ###  
+
+
+**** How do histone methyltransferases cause histone modification?****
+how  ###  DNA Modification Methyltransferases  ###  Histone-Lysine Methyltransferase  ###  Dos  ###  DO  ###  DO  ###  
+
+

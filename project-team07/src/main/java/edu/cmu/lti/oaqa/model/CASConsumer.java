@@ -8,11 +8,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.*;
 
 import json.gson.QuestionType;
 import json.gson.Snippet;
@@ -20,6 +18,8 @@ import json.gson.TestQuestion;
 import json.gson.TestSet;
 import json.gson.Triple;
 import lemurproject.indri.QueryEnvironment;
+import lemurproject.indri.RMExpander;
+import lemurproject.indri.ScoredExtentResult;
 
 import org.apache.uima.cas.CAS;
 import org.apache.uima.cas.CASException;
@@ -36,11 +36,19 @@ import util.Evaluation;
 import util.TypeUtil;
 import util.EvaluationObject;
 import edu.cmu.lti.oaqa.type.kb.Concept;
+import edu.cmu.lti.oaqa.type.answer.Answer;
 import edu.cmu.lti.oaqa.type.input.Question;
 import edu.cmu.lti.oaqa.type.retrieval.ConceptSearchResult;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
 import edu.cmu.lti.oaqa.type.retrieval.Passage;
 import edu.cmu.lti.oaqa.type.retrieval.TripleSearchResult;
+import edu.mit.jwi.IDictionary;
+import edu.mit.jwi.Dictionary;
+import edu.mit.jwi.item.IIndexWord;
+import edu.mit.jwi.item.ISynset;
+import edu.mit.jwi.item.IWord;
+import edu.mit.jwi.item.IWordID;
+import edu.mit.jwi.item.POS;
 
 public class CASConsumer extends CasConsumer_ImplBase {
 	List<TestQuestion> processed_questions;
@@ -61,10 +69,6 @@ public class CASConsumer extends CasConsumer_ImplBase {
 		JCas jcas;
 		Question question;
 		
-		//Possible Query Expansion under indri framework, will try later
-		//QueryEnvironment queryEnvironment = new QueryEnvironment();
-		//-Djava.library.path=src/main/resources/lib/
-		
 		try {
 			jcas = aJcas.getJCas();
 			question = TypeUtil.getQuestion(jcas);
@@ -74,10 +78,7 @@ public class CASConsumer extends CasConsumer_ImplBase {
 			
 			
 			List<String> concepts = new ArrayList<String>();
-			int concept_hitsize = 20;
-			//TypeUtil.getScoredConceptSearchResults(jcas, hitsize)
-			//TypeUtil.getRankedConceptSearchResults(jcas)
-			for(ConceptSearchResult concept_search : TypeUtil.getScoredConceptSearchResults(jcas, concept_hitsize)){
+			for(ConceptSearchResult concept_search : TypeUtil.getRankedConceptSearchResults(jcas)){
 				concepts.add(concept_search.getUri());
 			}
 			List<Triple> json_triples = new ArrayList<Triple>();
@@ -85,19 +86,21 @@ public class CASConsumer extends CasConsumer_ImplBase {
 				Triple triple = new Triple(triple_search.getTriple().getSubject(),triple_search.getTriple().getPredicate(),triple_search.getTriple().getObject());
 				json_triples.add(triple);
 			}
+			
 			List<Snippet> snippets = new ArrayList<Snippet>();
 			int snippet_hitsize = 50;
-			for(Passage snippet : TypeUtil.getScoredPassage(jcas, snippet_hitsize)){
+			for(Passage snippet : TypeUtil.getRankedPassages(jcas)){
 			  Snippet jason_snippet = new Snippet(snippet.getUri(),snippet.getText(),snippet.getOffsetInBeginSection(),snippet.getOffsetInEndSection(),snippet.getBeginSection(),snippet.getEndSection());
 			  snippets.add(jason_snippet);
 			}
+			
 			List<String> documents = new ArrayList<String>();
-			int doc_hitsize = 100;
-			for (Document doc : TypeUtil.getScoredDocument(jcas,doc_hitsize)) {
-				documents.add(doc.getUri());
+			for (Document doc : TypeUtil.getRankedDocuments(jcas)) {
+					documents.add(doc.getUri());
 			}
+			Answer ans = (Answer) TypeUtil.getAnswers(jcas).toArray()[0];
 			TestQuestion processed_question = new TestQuestion(id, body, type,
-					documents, snippets, concepts, json_triples, "");
+					documents, snippets, concepts, json_triples, ans.getText());
 			processed_questions.add(processed_question);
 		} catch (CASException e) {
 			e.printStackTrace();
@@ -113,12 +116,6 @@ public class CASConsumer extends CasConsumer_ImplBase {
 	    System.out.println("DOC MAP:  "+eval.DocMAP(true));
 		System.out.println("TRIPLE MAP:  "+eval.TripleMAP(true));
 		System.out.println("SNIPPET MAP : "+eval.SnippetMAP(true));
-		//String output = TestSet.dump(processed_questions);
-		//BufferedWriter writer = new BufferedWriter(new FileWriter(new File(
-		//		processed_file)));
-		//writer.write(output);
-		//writer.flush();
-		//writer.close();
 	}
 
 	// Auxiliary function

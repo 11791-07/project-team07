@@ -1,0 +1,74 @@
+{
+    "questions": [
+     {
+            "body": "Are there any DNMT3 proteins present in plants?",
+            "type": "yesno",
+            "id": "511a16f9df1ebcce7d000005"
+        },
+     {
+            "body": "What is the most prominent sequence consensus for the polyadenylation site?",
+            "type": "list",
+            "id": "5133b9455274a5fb0700000c"
+        },
+      {
+            "body": "Super-SILAC is a method used in quantitative proteomics. What is the super-SILAC mix?\n(SILAC: Stable Isotopic labelling by aminoacids in cell culture)",
+            "type": "summary",
+            "id": "51430930d24251bc0500000b"
+        },
+       {
+            "body": "Is Mammaprint approved by the United States Food and Drug Administration?",
+            "type": "yesno",
+            "id": "51487821d24251bc0500002f"
+        },
+       {
+            "body": "Which medication should be administered when managing patients with suspected acute opioid overdose?",
+            "type": "factoid",
+            "id": "5149f494d24251bc0500004c"
+        },
+      {
+            "body": "What is known about the reimbursement of Viagra",
+            "type": "summary",
+            "id": "5150b45ad24251bc0500006f"
+        },
+        {
+            "body": "Does HER2 under-expression lead to favorable response to trastuzumab?",
+            "type": "yesno",
+            "id": "51542eacd24251bc05000084"
+        },
+        {
+            "body": "Can Alzheimer's disease related miRNAs be detected in patients' blood?",
+            "type": "yesno",
+            "id": "5156beb4d24251bc05000089"
+        },
+{
+            "body": "Where in the cell do we find the protein Cep135?",
+            "type": "factoid",
+            "id": "51596a8ad24251bc0500009e"
+        },
+        {
+            "body": "In which isochores are Alu elements enriched?",
+            "type": "list",
+            "id": "515bd543298dcd4e51000001"
+        },
+        {
+            "body": "Which forms of cancer is the Tpl2 gene associated with?",
+            "type": "list",
+            "id": "515bf6d6298dcd4e51000004"
+        },
+       {
+            "body": "Which histone marks are deposited by Set7?",
+            "type": "list",
+            "id": "5160412d298dcd4e5100003c"
+        },
+        {
+            "body": "Are there any desmins present in plants?",
+            "type": "yesno",
+            "id": "5162e011298dcd4e51000049"
+        },
+        {
+            "body": "Is it possible to detect survivin protein expression in normal human adult tissues?",
+            "type": "summary",
+            "id": "516425ff298dcd4e51000051"
+        }
+    ]
+}

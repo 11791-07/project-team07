@@ -1,0 +1,1835 @@
+105-kDa protein (p105) precursor
+109 bp hly DNA fragment
+10 kDa movement protein 3 (ORF4)
+10-kD skeletal extracellular matrix (ECM) protein
+10q24 locus
+13 kDa movement protein 2 (ORF3)
+150-kDa protein, p150
+156-kb human gene NFKB1
+15-kDa antigen of Dirofilaria immitis
+15-kilobase pair mouse ho-1 promoter
+160 kDa nuclear 'domain rich in serines' (DRS) protein
+160 kDa RNA-dependent RNA polymerase (ORF1)
+16-kDa endonuclease V from bacteriophage T4
+16S rRNA gene sequence
+17 syn+
+1a
+2022 bp cDNA (VrCDPK-1)
+2.0-kb LAT
+20-kDa guanine nucleotide-binding proteins
+23S rRNA in Escherichia coli
+26 kDa movement protein 1 (ORF2)
+27S precursors
+2-kilobase B2 transcript
+345 amino acids (R.HgiCI)
+35S
+35S promoter
+3.6-kb full-length alpha-GalNAc cDNA sequence
+3-hydroxy-3-methylglutaryl coenzyme A (HMG-CoA) reductase
+3-hydroxy-3-methylglutaryl coenzyme A (HMG CoA) synthase
+3-hydroxy-3-methylglutaryl coenzyme A reductase gene
+3-hydroxy-hexobarbital dehydrogenases
+3TP
+3'-UTR of S4
+3'UTR/S1
+4.1H
+42 kd cellular Elk-1 kinase
+438 bp EcoRI fragment
+451Dino2
+4.5S-like structure
+460-kb CENP-A-binding DNA domain
+47-kilodalton major integral membrane immunogen of Treponema pallidum
+5.8S-like structure
+5B
+5' c-sis exon
+5 hydroxytryptamine 3 (5-HT3) receptor
+60-kDa CCAAT box-binding protein
+64-kDa component of cleavage stimulation factor
+6.5- to 7-kb IAP units
+70 kDa (LNX-b)
+70-kDa subunit of RPA
+7.5-kb COR segment
+-76/grp1.8 minimal promoter
+9-kDa human homolog of the outer-arm dynein light-chain
+A1
+AAMP
+A antigen
+AAV promoter
+Ab l
+ACC-oxidase transcripts
+acetate-phytohemagglutinin
+acetylcholine transporter
+acetyl-S-[acyl-carrier protein]
+actinorhodin biosynthetic gene cluster of Streptomyces coelicolor A3(2)
+actin/TnC-binding, actomyosin-inhibitory, domain
+activated C kinase
+activated protein C
+activating transcription factor (ATF)-4
+activating transcription factor/cAMP response element
+activating transcription factors
+activator proteins 1 and 2
+active Mn-superoxide dismutase
+active recombinant telomerase
+active S-CDKs
+acyl-CoA-binding protein
+adapter protein Grb2
+adenovirus E4-6/7 protein
+adenovirus type 5 E1A
+adenylate cyclase-activating polypeptide
+ADH
+adhesin
+adrenergic receptors
+A gamma-globin
+Ag-binding region
+AGM and NIH/Swiss mouse CCR5 proteins
+AHA2 mRNA
+ahpC
+[Ala85]Dk(69-85)
+alanine tRNA
+albumin promoter
+aldolase B gene
+alpha 13
+alpha 13Q226L
+alpha1,4-N-acetylglucosaminyltransferase
+(alpha1) collagen I gene
+alpha1-globin
+alpha1(I) collagen gene promoter
+alpha1(I) collagen mRNA
+alpha 1(I) collagen promoter
+alpha 1-proteinase inhibitor complexes
+alpha 2 gene-containing unit in rhesus macaque
+alpha 2(V) collagen gene
+alpha 4 integrin gene promoter
+alpha-6-D-mannoside beta-1,2-N-acetylglucosaminyltransferase II
+alpha 7 cytoplasmic domain
+alpha-actin promoter
+alpha-amylase gene
+alpha and sigma-70 subunits of RNA polymerase
+alpha-autoreceptors
+alphaB-, alphaA-, delta1-, and zeta-crystallin
+(alpha + beta) family
+alpha, beta, or gamma PKC
+alpha-globin 3'UTR
+alpha-glucosidase gene
+alpha i(54)/s
+alpha promoter DNA sequences
+alpha-spectrin
+alpha-thrombin
+amino acid sequence of gamma-kafirin
+aminopeptidase N
+amino-terminal-charge cluster mutant protein
+amino-terminal S1 homology region
+amniotic fluid alpha fetoprotein
+amylin gene promoter elements
+androgen-binding protein
+androgen receptors
+animal CAKs
+annexin A5 gene
+ANT1 transcriptional control elements
+anticoagulant heparan sulfate proteoglycan
+anti-G(D2) monoclonal antibody 3F8
+antigenic regions A, B and C of VP7
+antihemophilic factor
+Anti-hepatitis A
+anti-HHV-6-IgG
+anti-HIV
+antisense Arabidopsis HD
+antisense Ha-Ras
+anti-Tyr(P)
+AP-1 bZip activators
+AP-1 complex
+AP-1/DNA binding complex
+AP-1 family transcription factors
+AP-1 plus vitamin-D-responsive promoter
+AP-1 superfamily of basic-leucine zipper factors
+AP-1 transcription factors
+Ap-2
+AP-2 sigma
+APC-R
+apo A-I/B
+apo A-II/B
+apolipoproteins B and A-I
+Arabidopsis light-harvesting chlorophyll a/b protein gene
+ARF-GDP
+Arg1
+arginine ADP-ribosyltransferases
+aromatase proteins
+Asd proteins from Vibrio spp
+Ash-l
+ASIP mutation
+AST cDNAs
+ATG2
+atp9
+attenuator 1
+attenuator 2
+autonomously replicating sequence-binding protein 1 from fission yeast Schizosaccharomyces pombe
+avidin-biotin
+avidin-biotin complex peroxidase
+AVP gene precursor
+B"
+bacterial transmembrane (TM) proteins
+bacterial urease
+BALB/c gene
+BamHI
+BamHI-C/W
+BamHI-F promoter-initiated mRNAs
+BamHI-K (5.2 kilobase pairs [kbp])
+basal transcription factor TFIIB
+basic helix-loop-helix (bHLH) protein
+basic region/helix-loop-helix (bHLH) dioxin receptor
+basolateral bile acid transporters sodium taurocholate cotransporter protein
+Batten disease
+B block
+Bc
+BCL-X(L)
+Bcl-xL/Bcl-2 associated death promoter
+BCR complex
+beta(2)AR
+beta 3 gene promoter
+beta 4-adducin
+beta-actin minigene
+beta adrenoceptor subtype
+beta-casein gene promoter
+beta-catenin protein
+beta-d-xylosyltransferase
+beta-Galactosidase
+beta-globin gene
+beta-glucuronidase gene
+betaI
+beta-lactamase gene
+beta-pol
+beta receptors
+bet genes of Escherichia coli
+bglP'
+bHLH
+Bicoid
+biotin protein
+blood carboxyhemoglobin
+blood haemoglobin
+blood hemoglobin
+Blood serum erythropoietin
+bone morphogenetic protein 2
+bone specific alkaline phosphatase
+bovine and murine c-myb
+bovine and rat GHF-1 cDNA
+bovine brain Galpha(q/11)
+bovine Nrl
+bovine vacuolar proton pump
+brain dopamine receptors
+Brassica S locus region
+Brd bristle loss phenotype
+breakpoint cluster region
+breast cancer marker gene
+Broad Complex Z2
+BTB protein
+budding yeast cdc28
+Bvg system
+bZP2 cDNA (115-1914 nt, 1.8 kb)
+C'
+C1-esterase inhibitor
+C2 motif
+C3(D) epitopes
+C4 photosynthesis genes
+CA 125
+CA 19-9
+CA 242
+Ca2+/calmodulin (CaM)-dependent protein kinase
+Ca2+/calmodulin-dependent protein kinase II
+Ca2+/calmodulin-dependent protein kinases
+Ca(2+)-dependent phospholipid binding protein family
+Ca(2+)- or calmodulin-dependent kinases
+CA 50
+CAAT enhancer-binding protein (C/EBP)alpha
+CAAT enhancer-binding protein consensus site (CAAT box)
+Caenorhabditis elegans death susceptibility gene
+Calcitonin
+cAMP phosphodiesterase
+cAMP-response element-binding protein
+cAMP response element (CRE)-binding protein
+Candida albicans mitogen-activated protein kinase homolog
+capping enzyme
+capsid precursor
+carboxyl-terminal parathyroid hormone
+carboxy-terminal EBNA-1 construction
+carboxy-terminal HECT domain
+Cardiac endothelin
+cardiac troponin C
+catabolite control protein CcpA
+catalase in Escherichia coli
+catalytic domain of Raf
+catecholaminergic receptors
+CAT enzyme
+CAT fusion
+CA V
+caveolin gene family
+CBF DNAs
+Cbl family
+CBP-interacting domain
+CCAAT/enhancer binding protein (C/EBP) alpha
+CCAAT/enhancer-binding protein (C/EBP) delta
+c-Cbl locus
+CCE1
+CCR3 receptor ligand
+CCR5 gene promoter
+Ccta/t-complex polypeptide 1
+CD2 structure
+CD3 gamma delta epsilon
+CD40 ligand
+CD45-
+CD7
+Cdc15p mitotic regulatory protein kinase in budding yeast
+Cdc2/28
+Cdc2-like
+Cdc68 functional homolog
+CDK from Arabidopsis
+cdks 4 and 2
+cDNA clones homologous to ORFII
+cDNAs encoding gibbon and monkey platelet and T cell activation antigen 1
+C/EBPalpha and beta
+Ced-3
+cellular luciferase
+"cellular NBP"
+cellular p21ras protein
+cerebrospinal fluid immunoglobulin G
+c-ets-2
+CFTR's NBF1+R region
+CG and FSH receptors
+cGMP-dependent protein kinase (cGK) type I and II
+C group
+chalcone synthase (CHS) minimal promoter
+chicken apolipoprotein A-I gene
+chicken paxillin cDNA
+chicken thyroid hormone receptor (TR) alpha
+chimeric MLL products
+chimeric receptors GAL-ER
+Chinese hamster S14 protein sequences
+chloramphenicol acetyltransferase construct
+chloramphenicol acetyltransferase gene coding sequence
+chloramphenicol acetyltransferase reporter
+chondroitinase AC and ABC
+C(H) region genes
+chromosome transmission fidelity
+CHS promoters
+Cin
+CIRs 5 and 6
+cis-trans-peptidyl-prolyl isomerases
+c-jun messenger RNA (mRNA)
+c-Jun mRNA
+Ckappa1 gene locus
+CKIalpha site (Thr-233)
+c-kit protein
+ClaI
+class I Db antigen-presenting groove
+class I heavy (alpha) chains
+class II flagellar genes
+class I major histocompatibility complex gene promoter
+class I MHC-peptide complexes
+Cln1,2
+CLN2 genes
+CLN3
+clotting factors II, V, VIII, IX, X
+C mu
+c-myc 5' untranslated region (UTR)
+c-myc nuclear localization signal
+c-MYC P1 and P2 transcription initiation sites
+c-Myc transcriptional activation domain
+coagulation factors II, V and VIII
+coagulation factor VIII:coagulant
+coat colour mutation slaty
+cob gene in yeast
+coiled-coil related protein
+colony-stimulating factor
+complementarity determining region
+complement C3
+complement C3a anaphylatoxin receptor
+complete tat
+con-10 open reading frame
+con-10 promoter-regulatory region
+concatenated Hind III linkers
+connective-tissue protein elastin
+Connector enhancer of KSR
+consensus c-Myb binding site
+consensus c-myb element
+consensus mammalian LHbeta gene
+consensus sequence motif for the sigma 35-recognized promoters
+constitutive CAT
+COOH-terminal segment (GTPase-activating protein region)
+COOH-terminal SH2 domains
+copper- and topa quinone-containing monoamine oxidase
+cop region
+core
+core enzyme
+core histones
+cornified cell envelope
+corpuscular hemoglobin
+cpc-1 coding region
+CPE
+CPK-MB
+CPs
+cpxA*
+CPY vacuolar sorting signal
+c-raf(-1) product
+Cre
+CreA
+Cre-A from Aspergillus, Emericella and E. coli
+CREB activation domain
+CREB/ AP1
+CREB protein
+c-Rel subunit
+Crk-associated substrate
+Crk proteins
+CRP-cAMP complex
+cryptococcal antigen
+c-sis cDNA clone
+CTA(T/A)4TAG
+CTD kinases
+CTF-NF1
+CTS1 and CTS2 of Ci
+C-type cyclin
+Cu(I) transport genes
+CUP1 gene
+CX
+C-X-C chemokines
+CYC
+CYC1 promoter
+cyclic AMP-responsive element binding (CREB)-binding protein
+cyclin-D1
+cyclin-dependent kinase phosphorylation site
+cyclin E- and cyclin A-dependent kinase
+cyclooxygenase
+cystic fibrosis transmembrane conductance regulator
+CYT-18
+cytokines interleukin-1 beta
+cytoplasmic dynein heavy chain of Neurospora crassa
+cytoplasmic serine/threonine kinase domain
+cytoskeleton-associated protein paxillin
+cytosolic cyclophilin isoform from Drosophila melanogaster
+cytosolic phosphoenolpyruvate carboxykinase of the chicken
+D1/D2 receptor
+D1 receptors
+D3 mRNA
+D5/D1(CT)
+D5/D1D(CT)
+D- and E-type cyclin kinase complexes
+Dbf2p kinase in budding yeast
+Db mutant B6.CH-2bm13 (bm13)
+DBP sites
+D-Cbl
+dCK subunit
+DDC
+DEAD protein family
+death enhancer
+decorin
+Delta
+Delta19-25
+delta hemolysin
+delta promoter insertion his-4-912 delta
+denatured firefly luciferase
+DER mutant
+DH
+DHB
+dithiol-reductase enzyme
+DNA and/or RNA exonuclease domains
+DNA-AR
+DNA binding/EF hand/acidic amino-acid-rich
+DNA binding POU domain
+DNA-binding protein B
+dnaK operon of Bacillus subtilis
+DNA polymerase alpha catalytic core
+DNA polymerase delta of Saccharomyces cerevisiae
+DNA polymerases of trypanosomes
+DNA repair gene
+DNase I footprints
+dominant GCN2 mutations
+dominant negative EGF-R mutant
+dominant-negative IkappaB-alpha(A32/36)
+dominant-negative MEK
+dominant negative Raf-1
+dominant negative Smad2
+dominant negative Stat3
+double-stranded RNA (dsRNA)-activated Ser/Thr protein kinase
+dpb2-1
+dpm1(+)
+DP proteins (1-3)
+D protein
+DQA1
+DR1 molecules
+DR4
+DR5
+D-region
+Drosophila cell cycle control protein (cdc)
+Drosophila discs large tumor suppressor
+Drosophila epidermal growth factor receptor homolog
+Drosophila Menin1 gene transcripts
+dShc
+DSK2-1 mutation
+DSL
+dTFIIA-L/S
+E1A promoter
+E1a protein
+E1A protein
+E1b gene products
+E1 replication protein
+E2 enzymes
+E2F family members (1-5)
+E2L2(120-233)
+E2 protein
+E2R
+E2 site
+E2 transactivation domain
+E4-6/7 protein
+E6 motif
+E7 fusion proteins
+E7 gene
+early (E) region
+early gene
+early genes
+EBNA-1
+EBNA protein (approximately 78,000)
+EBV LMP-1 promoter sites
+EC-1 mRNA
+EC 3.5
+E-cadherin extracellular domain
+E-cadherin extracellular domains
+EcoRI
+EcoRI-B fragment
+Eed
+EF-1 alpha O
+EFIA#1
+EGF-1 modules
+EGF-induced ERK MAPK
+EGF-R
+EGFR-IC
+EGR-1 transcription factors
+EIAV LTR sequence
+eIF-2alpha
+eIF-2alpha kinase family
+elastase
+element CIIB
+Elk-1(1-212)
+ELL functional domains
+elongation factor 1-alpha variant
+endogenous E-cadherin
+endogenous Ig heavy chain locus
+endogenous Ig lambdaL
+endogenous Ntr-1 gene
+endogenous PPARgamma target gene
+endogenous RNA polymerase
+Engrailed-binding sites
+enhancer factor I subunit A
+enhancer of simian virus 40
+enkephalin
+entire humanized anti-FcgammaRI mAb
+entire Neurospora crassa CuZn superoxide dismutase gene
+env
+envelope glycoprotein E of the flavivirus tick-borne encephalitis virus
+envelope glycoproteins of Rous sarcoma virus (RSV)
+Enzyme I
+enzyme SmaI
+Epb7.2,Hc,Gsn
+E(Pc)
+epidermal growth factor (EGF) receptor
+epidermal growth factor-receptor
+epithelial-microtubule associated protein-115
+E protein homodimers
+ER(+)
+ER1
+ErbB family
+E/S and CWE antigens
+Escherichia coli endotoxin
+ESE
+ESP1
+Ets-1 cDNA clone
+'Ets Related Molecule PEA3-like'
+eukaryotic polymerases II and III
+E(var)3-93D
+exoenzyme S
+exogenous PRL
+exogenous PTHrP1-34 and 1-86 peptides
+exon-located activator protein-2 binding site
+exonuclease III
+extracellular signal-regulated kinase 1
+F42A-IL-2R beta complex
+factor I cofactor
+factor II
+factor VII inhibitor
+factor VIII promoter sequences
+factor V Leiden mutation
+factor X
+family 35 proteins
+FAP-1 (C-terminal 399 amino acids)
+fatty acid synthase
+FAX
+fbp1 promoter constructs
+fbpA operator sequence (42 bp)
+Fc gamma RIIB1-PECAM-1 receptor
+Fd
+FEF
+feline liver/bone/kidney-type alkaline phosphatase
+fer
+ferric uptake regulation protein
+ferritin subunit
+FGF3
+fibrinogen degradation products
+fibroblast growth factor (FGF) receptor
+FinO protein
+first ORF (ORF-1) of equine herpesvirus type 1
+fission yeast CAK mutant
+fix
+FL protein
+fork head
+fork head DNA binding domain
+fork head homolog-11B
+forkhead homologue in rhabdomyosarcoma
+fos
+Fos family
+Fra-2 phosphorylation sites
+fructose-2,6-bisphosphatase
+FSH-P
+FSH receptor
+full-length HPV-16 and BPV-1 E2 proteins
+full-length human pim-1 cDNA
+full-length mature E3
+full-length murine survivin cDNA
+full-sequence rabbit muscle protein kinase inhibitor
+functional FBP+ gene
+functional recombinant Ku
+Fur repressor dimers
+F.VIII:C
+G(11)
+G1-specific cyclin-dependent kinases
+G2/M spindle-regulatory protein Dim1p
+G-6-PD
+GA 20
+GABPalpha and -beta
+Gac1
+Gag sequences
+GAL
+galactose transporter
+Galpha(12/13)
+Galpha(i)
+Galpha(q/11)
+Galpha(s)
+gamma-actin
+gamma-globin
+gamma-glutamyl transferase
+GAP-43
+gap amber mutant
+GATA-1 consensus sequence
+GATA-4, -5, and -6
+GATA family of vertebrate transcription factors
+Gax
+G beta
+G(betagamma)
+G beta gamma binding region
+GBF protein complex
+gcn2-
+GCN2 protein
+gcn3-
+GCN4 transcription factor
+Gene 1
+gene 16
+gene 16.7
+gene 32
+gene 73
+gene ATF-1
+gene cat-86
+gene E75
+gene encoding human K14
+gene encoding human tissue-type plasminogen activator
+gene encoding tRNA nucleotidyltransferase in the yeast Saccharomyces cerevisiae
+gene IV
+gene lac-1
+gene MPS1
+genes encoding gp138
+genes encoding PAL
+genital HPV16 E7
+germ cell nuclear factor
+germ cell-specific Sp1 mRNAs
+GGT
+GGT mRNA
+GHF-1
+GHR
+GHR cytoplasmic domain residues 485-620
+G(i) family
+G(i/o) proteins
+GIRK channels
+GLP
+glucanase gene
+glucokinase
+glutaminase
+glutathione S-transferase fusion
+glutathione S-transferases
+glutathionine S-transferase
+GM-CSF receptor alpha
+GnRH-R
+gnt operon of Bacillus subtilis
+gp100
+gp120 IIIB
+gp120 x 41
+GPHe(P2)
+GPR34 mRNA transcripts
+G protein alpha subunit from tomato
+G protein-coupled specific membrane receptors
+G protein gamma subunit-like
+G protein signaling (RGS) proteins
+Grb2-binding protein
+GRK interacter
+GRO-alpha
+growth factor receptor-bound protein 2
+Growth hormone
+growth hormone binding protein gene
+growth hormone gene in rainbow trout
+GSE
+GSE element
+GST domain
+GST fusion proteins
+GTP-binding protein(s)
+H-2b or H-2d NP peptides
+H5 promoter
+HA-
+Ha-ras codon 12
+HB
+HBc(IgM and IgG)-, HBs- and HBe-antibodies
+HBsAg determinants
+HBs and HBc Ag
+HCMV major immediate-early
+HD-Zip
+heat-inducible dnaK gene product
+heat shock protein 70 promoter
+helix-loop-helix family of transcription factors
+Hepatitis B surface antigen
+hepatitis C virus antibody
+hepatitis C virus (HCV) antibodies
+hepatocyte nuclear factors 1 and 5
+herpes simplex virus TK promoter transcription start site
+HeT-A
+heterodimeric NF-kappa B complex
+hGH 5'-flanking DNA (5'-FR)
+hGli2 alpha, beta, gamma, and delta
+high density lipoprotein (HDL) receptor
+higher plant omega-3 fatty acid desaturases
+high-mobility-group
+high-mobility-group I(Y) protein
+high mobility group-like sequences
+high-mobility-group motif
+high mobility group of non-histone chromosomal proteins
+High-mobility-group protein I
+HindIII
+HIRES(MP,75)(U1)-MP-CP-3'UTR
+his175 or his273 mutant p53 proteins
+his7/dpm1(+)
+Histone
+histone H1-like
+histone-like protein
+HIT protein similarity regions
+HIV-1 ENV epitope
+HIV-1 LTR promoter
+HIV-antibody
+HIV long terminal repeat
+hKID coding sequence
+HLA-A and B
+HLA-DR
+HLA-DRA X-box oligonucleotide
+hly target sequences
+HMG
+HMG-14
+HMG I(Y)
+HMG-I(Y)
+HMG-I/Y proteins
+HMR
+H-NS
+Hog 1
+Hog1p signal transduction pathway
+holoenzyme RNA polymerases
+homeobox protein
+homeodomain
+homeodomain-containing gene
+homeodomain family
+homeodomain transcription factor
+homeotic gene family
+homologs of Hh molecules
+homologue of Escherichia coli dinB
+HPFH-3 deletion
+HPRT
+H. pylori plasmid proteins
+H. pylori plasmid replication proteins
+HRAS1
+H-Ras-activated protein kinase
+Hrp secretion pathway components
+HSF1 monomer-trimer
+HSP60
+hsp70 family
+hsp70 gene family
+hsp70 of Escherichia coli and Bacillus megaterium
+Hsp70 proteins
+hsp90 dimerization domain
+HSPG
+HSPs
+HSV-2/HSV-1 antibody
+hTAF(II)100
+hTAF(II)130
+hTAF(II)250
+hTAF(II)31
+hTAF(II)80
+hTAF(II)80 delta
+hTERT
+human alpha-globin promoter
+human alternatively spliced truncated reduced folate carrier
+human and chicken progesterone receptors
+human and mouse SCL loci
+human and murine blk sequences
+human and murine IL-1 beta genes
+human and murine ornithine decarboxylase mRNAs
+human aromatase
+human beta-globin locus construct
+human CD34+
+human c-myb intron 1 transcription pause region
+human CRF1
+human CTCF cDNA
+human cysteine-rich protein
+human cytomegalovirus (HCMV) major immediate-early protein IE2
+human DNA polymerase beta
+human E2F
+human fibrillarin
+human fibrinogen
+human gamma- to beta-globin
+human genes PSMB5
+human heat shock transcription factors 1 and 2
+human HepG2-erythrocyte and fetal muscle glucose transporters
+human homolog of UPF1
+human homologue of mouse MKP1
+Human homologue of yeast Rad23 protein A
+human HSP70 promoter
+human IFN-beta sequence
+human IgA
+human IL-1beta promoter
+human IL-4 cytokine gene cluster
+Human immunodeficiency virus type 1 (HIV-1) IN
+human immunodeficiency virus type 1 (HIV-1) integrase
+human immunodeficiency virus type 1 (HIV-1) long terminal repeat
+human immunodeficiency virus type 1 (HIV-1) Rev protein
+human immunodeficiency virus type-1 (HIV-1) Tat protein
+human lymphocyte-specific high mobility group (HMG)-box transcription factor TCF-1
+human MAdCAM-1 cDNA
+human MADS box consensus binding site
+human neutrophil peptides
+human N-ras codon 61 sequence
+human PCNA polypeptides
+human pituitary adenylate cyclase-activating polypeptide receptor
+human pituitary tumor growth-regulating factor
+human PKR homologs
+human platelet cAMP phosphodiesterase
+human PS
+human Raf kinase
+human Raf-responsive zinc-finger protein
+human SOCS-3
+human Sp1
+human T cell leukemia/lymphotropic virus type 1 Tax protein
+Human T-cell leukemia virus type I (HTLV-I) Tax
+human telomerase reverse transcriptase
+Human thyroid stimulator
+human UDP-d-Xylose:proteoglycan core protein
+human VDR
+human V(H)3+ Igs
+human Voltage-Dependent Anion Channel isoforms 1 and 2
+Huntington disease locus
+hydrolase B and C
+hydroxymethylglutaryl coenzyme A (HMG CoA) reductase
+IAP
+ICBP90 gene
+ICE inhibitor protein
+ICP27 C-terminal amino acid residues
+ICP35 e,f
+IE
+IE0 gene
+IE86 protein
+IE amino acid residues 1-322
+IE promoter
+IgG-4
+IgM kappa
+IgM lambda
+II beta-, III beta, and O beta-globin
+IkappaBalpha, -beta, and -epsilon
+IL6
+IL-6-type cytokines
+immediate-early
+immediate early regions
+immune serum globulin
+immunoglobulin gene recombination signal sequences
+immunoglobulin light- and heavy-chain
+immunoglobulin superfamily proteins
+inc
+inducible NO synthetase
+infected-cell protein 0
+infected cell protein no. 0
+influenza A PR/8/34 nucleoprotein gene
+inhibin
+inhibin A and B
+inhibitor 2
+inhibitor of NF-kappaB-alpha
+initiation factor eIF4G
+insulin receptor (IR) beta-subunit
+insulin receptor substrates 1, 2, and 3
+intact A1 protein
+integrase domain
+integration host factor
+intein N, C, and EN motifs
+interferon-alpha and beta
+interferon regulated factor (IRF)-1 mRNA
+Interferon Regulatory Factor (IRF)-1
+interleukin-1 beta (IL-1 beta)-converting enzyme
+interleukin-1 receptor antagonist
+interleukin 3 promoter reporter gene construct
+interleukin-8 receptor B
+interleukin enhancer-binding factor
+int mRNA
+iral
+IRES(MP,75) (HIRES(MP), (75)(CR)-MP-CP-3'UTR
+IRF
+ISGF3
+"isochore H1"
+isocitrate lyase gene of Candida tropicalis
+isoform XT-II
+isoprenylcysteine carboxyl methyltransferase family
+ISREs
+Jem
+Jem-1
+JH2
+joining region
+Jun and Fos family member-specific antibodies
+jun-D
+Jun family
+jun genes
+KAP3
+kappa B oligonucleotide
+kappa E3'
+kinase-deficient PKC zeta
+kinesin
+Klenow fragment of Escherichia coli DNA polymerase I
+KLH
+KLP-11
+K-SAM
+L12/chloroplast ribosome
+L12 mRNA
+L17
+L1Hs RNA(s)
+La
+lac
+Lac
+lace alleles
+lactotroph- as well as somatotroph-like cell nuclear protein
+'lacZ
+L(alpha)
+lambda and kappa antibody gene
+lambda repressor
+LAR
+Large T antigen
+late gene
+late (L) region
+latency-related
+latent membrane proteins 1 and 2A of Epstein-Barr virus
+LAT intron
+LDL receptor (-1076 to +11 bp) reporter
+lecithin/cholesterol acyltransferase
+lectin
+LEF
+LeMT(A)
+LeMT(B)
+LEU 2 gene
+LEU2 gene
+leuA
+leucine-rich repeat (LRR) protein from tomato plants
+leukemia virus (MLV) SL3-3 LTR
+leukocyte esterase
+Leu-rich repeats-containing G protein-coupled receptor
+Lg
+LG modules
+LH/CG receptor
+ligase
+light chain variable region
+Light regulatory unit 1
+LIM
+linear poly-ubiquitin chains
+link protein
+lipid A monoclonal antibodies
+lipoprotein (a)
+LMP1 promoter
+LNA
+long RET isoform
+low- and high-density lipoprotein cholesterol
+low density lipoprotein
+low-density lipoprotein receptor gene family
+low molecular weight GTP-binding proteins
+low-molecular-weight GTP/GDP-binding proteins
+Lp(a)
+L-PK
+L protein encompassing 2109 amino acids
+LPS-and IL-1-responsive element
+LRP-2
+LT
+LT-like
+Lu(b)
+luteal HSP-27
+lysosomal enzymes
+M1-CREB
+M-66
+m6F6 cDNA clone
+MAA
+Mac1 from Saccharomyces cerevisiae
+Mad1, 2, 3
+MAdCAM-1
+MADS
+MADS box
+MADS box family
+Maf proteins
+maize ubiquitin
+major 49-kDa core protein
+major capsid protein
+major histocompatibility complex (MHC) class I molecules
+major histocompatibility complex molecules
+major immediate-early
+major sigma 43 factor of B. subtilis RNA polymerase
+mak- phenotype
+MAL1
+Male-enhanced antigen gene
+malonyl-S-[acyl-carrier protein]
+mammalian and yeast oligosaccharide-processing mannosidases
+mammalian Groucho family members
+mammalian homolog of yeast UPF1
+mammalian HSFs
+mammalian mIgG and IgE
+mammalian TFIID component
+mannose 6-phosphate receptor
+MAPK family
+MAPK family members
+MAP kinase cascades
+MAP (mitogen-activated protein) kinases
+maternal serum somatomedin A
+mating pathway reporter FUS1
+matrix calcium-binding protein
+mature SAP-1
+Mature tobacco L12 protein
+MA type
+max RNA
+MB
+mb-1
+MBD
+MBP kinase
+MB type
+MCB
+mCD22 cDNA
+MCK-L
+MCP
+M-CPT I mRNA
+MDBP sites
+MDF/bH-L-H heterodimers
+MEK kinase
+melanoma differentiation associated gene-7
+membrane-associated GHR transmembrane/cytoplasmic domain
+membrane dipeptidase
+message up-regulated during death
+metalloprotease of Vibrio cholerae O1
+metallothionein-I gene
+metazoan RNA polymerase I promoters
+metH gene in Salmonella typhimurium and Escherichia coli
+mht
+microtubule and nuclear associated protein
+middle-T
+mik1
+mim-1A
+mitochondrial bc1 complex crystal structure
+mitogen-activated protein-extracellular signal-regulated kinase kinase
+mitogen-activated protein kinase (MAPK) kinase
+mitogen-activated protein kinase (MAPK) kinase (MKK)7
+mitogen-activated protein kinases p42
+mitogen activated protein (MAP) kinase
+mitogen-activated protein (MAP) kinase
+mitogen activated protein (MAP) kinase family
+mitogen-activated protein (MAP) kinase phosphatase-1
+Mitogen-activated protein (MAP) kinase phosphatase-3
+mitogen-activated protein (MAP) kinases
+MLC-2
+MLL
+MMA, DMA, and TMA methyltransferases
+monkey LHR cDNA
+monkey opsin
+monoamine oxidase (MAO)--A
+morphine-like mu-receptor
+morphogenetic G protein
+mosquito non-LTR retrotransposon
+mos transcripts
+mouse alpha 1(I) gene
+mouse and human cDNAs encoding UNC-51-like kinase
+mouse and human mts1 genes
+mouse c-fos gene promoter
+mouse cytosolic chaperonin subunit gene
+mouse DNA polymerase epsilon catalytic subunit
+mouse estrogen receptor
+mouse glucocorticoid receptor
+mouse growth hormone receptor
+mouse homolog of human TP53
+mouse L1 family
+mouse Notch 3
+mouse ornithine decarboxylase-related sequence family
+mouse platelet-derived growth factor (PDGF) beta-receptor
+mouse platelet-derived growth factor (PDGF) beta-receptor promoter
+mouse porphobilinogen deaminase gene locus
+mouse Rad30b mRNA transcripts
+MPS1 open reading frame
+M reading frame
+mRNA capping enzyme
+MRP1
+MsERK1
+mTf
+MTS1
+mu and gamma 2b heavy chain genes
+(mud)-1-8
+multidrug resistance gene region
+multimerized RFX binding sites
+munc-18/n-Sec1/rbSec1
+murine and human mb-1 genes
+murine beta(3) integrin gene
+murine class II major histocompatibility complex A alpha gene X box
+murine ERF
+murine facilitative glucose transporter isoform 3
+murine FGFR-3 psuedogene
+murine homolog of the Drosophila nemo
+murine MHC class I genes
+murine mutation dominant white spotting
+murine susceptibility
+muscle-specific Xenopus cardiac actin gene promoter
+mutant areA product
+mutant bacterial P450 AA epoxygenase
+mutant EBNA-3C protein
+mutant HN genes
+mutant hTR beta 1
+mutant M6P/IGF II receptors
+mutant prp38-1
+mutant Raf-1 proteins
+mutated IL2R alpha promoter constructs
+myb
+Myb family of transcription factors
+myb oncogene family
+Myf5 expression domain
+myocyte enhancer factor (MEF)-2 like sequence
+myoD core enhancer
+MyoD protein
+myosin from rat
+myosin heavy chain gene
+myosin light chain kinase
+myotonic dystrophy locus
+NADH dehydrogenase complex
+NADPH:cytochrome P450 oxidoreductase
+Na+/H+ exchanger
+Na+,K(+)-ATPase
+Na+,K+-ATPase
+Na,K-ATPase beta subunit
+native alpha 3 beta 60 enzyme
+native glucocorticoid receptor
+natural eIF-2B alpha
+N-benzoyl-L-tyrosyl-p-aminobenzoic acid hydrolase
+Nef coding sequences
+negative co-factor 2alpha
+neomycin phosphotransferase II reporter gene systems
+neo replacement cassette
+ner
+NEU
+neural cell adhesion molecule
+Neuron-specific Bcl-2 homology 3 domain-only splice variant
+neuropathy target esterase
+neuropeptidase
+Newcastle disease antibody
+NF-1 family of transcription factors
+NF-AT
+nfe
+NF-kappaB complexes
+NF-kappaB consensus oligonucleotide
+N gene
+Ng/RC3
+NH2-terminal truncated nitric-oxide synthase
+NHE5 genomic clone
+nifH promoters of Klebsiella pneumoniae
+nifV mutation
+nit-3 gene of the filamentous fungus Neurospora crassa
+nitrate and nitrite reductase genes
+nitrate reductase in tobacco
+NK1-receptor
+NK2 family
+NLS-1
+nm23-H2
+nmt1
+Nodal
+non-A, non-B Ag and antibody
+non-A, non-Bc Ag
+noncanonical GnRH-R activating sequence
+nonreceptor tyrosine kinase
+notch
+Notch homologue
+Notch(IC)
+NP
+NRS
+NS3'
+N-terminal regulatory domain of Wee1
+NTR-1 promoter sequences
+nuclear 5.8S rRNA
+Nuclear-encoded chloroplast ribosomal protein L12 of Nicotiana tabacum
+nuclear-factor-interleukin-6-binding-site-like sequence
+nuclear factor-kappa B
+nuclear factor (NF)-kappaB
+nuclear factor (NF)-kappaB1 isoforms
+nuclear factor (NF)-kappaB consensus element
+nuclear gene CBP1 of Saccharomyces cerevisiae
+nuclear ribonucleoprotein C protein tetramer
+nuclear RNA polymerases
+Nus
+O2 box
+O2 site
+OA
+oas gene family
+Ob-R
+oCRF1
+OCT
+Ogg1 protein
+opaque-phase-specific gene PEP1
+ORFII
+organic anion transporter protein 1
+ori-P
+ovomucoid serine protease inhibitors
+p110alpha, beta, and delta
+p15(E)
+p15E cDNA gene fragments
+p16INK4A locus
+P1 precursor
+p27 gene
+P2P-R
+P2Y(11) mRNA
+p30(II)
+p33
+p38 family
+p4
+P-450 genes
+P450R
+(p50)2-DNA complexes
+p50 homodimers
+p50 proteins
+p53-
+p53-/-
+p53 mutations
+p53p2
+p53 product
+p54 subunits
+p59
+p62 complex
+p65 subunit
+p73beta (residues 81-113)
+P7 mutations
+p95 component
+PAF-AH
+paired
+paired-domain recognition sequence
+papain-like protease domains
+paramyxovirus fusion (F) protein
+partner of Rac
+PAS
+Pat
+pathogenicity locus pat-1
+Pax-2/5/8 gene family
+Pax-8 isoforms a and b
+Pbx dimer partner
+PC2 protein
+PcG mutations
+Pcl1,2
+P/C-specific mRNA
+PDGF-B
+PDZ repeats 1 and 2
+pecT
+pediocin AcH (Lys+1 to Cys+44)
+P[en]
+P-enolypyruvate carboxykinase promoter
+PE operons
+peptide B
+peptide/DR complexes
+peptide:MBP fusions
+peroxidase encoding ESTs
+pet
+ph
+PHA-L
+PHD
+phospholipase
+phosphoprotein (P)
+phosphorylated Fra-2
+photosystem II polypeptide
+phrcA
+phytochromes A and B
+phytohemagglutinin A
+[PI(3) kinase]
+PI 3-kinase catalytic subunits
+pilE gene product of Pseudomonas aeruginosa
+PITSLRE PK genes in chickens
+pituitary and serum LH
+pituitary-thyroid hormones
+PKI(1-31)
+PKR(1-551)K64E/K296R
+Plac promoter constructs
+pla gene
+plant homeodomain
+plant RPT subunits
+plasma ANP
+plasma AVP
+plasma C-peptide
+plasma fibrinogen
+plasma glucagon
+plasma glutathione peroxidase
+Plasma histaminase
+plasma IGF-1
+Plasma leptin
+plasma TBG
+plasma TNFalpha
+pleckstrin homology-related gene family
+P mRNA
+PNA
+pol1
+Pol I
+pollen S gene(s)
+polymerase (L) genes
+polymerases (Pol) I, II, and III
+polypeptides of 420 amino acids (M.HgiCI)
+porin gene
+POU-homeodomain protein
+POU-specific
+PP2A trimeric and dimeric complexes
+PPO
+PR-1 protein family
+(PRDII)(4)
+PRDII-BF1-derived cDNAs
+PREB (PRL regulatory element binding) protein
+pregnancy-associated plasma protein-A
+pregnant mare serum gonadotrophin
+PREs
+PRL-R
+pro-alpha 2(I) gene
+proenkephalin germ cell cap site region
+proIL-1 beta cap site-proximal region
+prolactin promoter
+proliferation potential protein-related
+promoter/lacZ fusion gene
+prostaglandin synthetase
+prostate-specific antigen
+Protamine
+protein C inhibitor
+protein H
+protein kinase-2
+Protein kinase A-Ialpha
+protein kinase PKR
+protein kinases A, B, and C
+protein L11-like eukaryotic counterpart
+protein phosphatase (PP) 1
+protein synthesis initiation factor eIF-4D
+protein-tyrosine kinase
+protein tyrosine phosphatase
+protein Z
+proto-sis
+proximal regulatory factor(s) I
+pS2
+psaB
+psbN
+psbT
+"pseudo intein."
+PSI-K
+pst1(+)
+PTH-related peptide (PTHrP) receptor
+PTK family
+Pto gene product of tomato
+PU.1 interaction partner
+Pur alpha recognition element
+Purified P7
+Purified Pra
+purified smg p25A GDI
+purified soluble D10 TCR
+pyrophosphatase
+R2 message
+Rab
+Rab1B, -5, -7, -8, or -11A
+rabbit H,K-ATPase beta subunit
+Rabbit skeletal muscle glycogenin
+RAD+
+RAD18 gene open reading frame
+RAD5
+rad9.192 DNA repair mutant from the fission yeast, Schizosaccharomyces pombe
+Raf-1 target
+rainbow trout HIF-1alpha protein
+Raja VH
+RAR beta 2 gene in mouse embryos
+RARs
+Ras effectors
+ras oncogene family
+Ras subfamily
+rasVal12
+rat aldolase C gene
+rat B-myc genomic clone
+rat branched-chain-2-oxo-acid dehydrogenase (BCOD) kinase mRNA
+rat BSP gene promoter
+rat luteinizing hormone receptor cDNA
+rat mitochondrial glycerol-3-phosphate dehydrogenase gene
+rat NK cell protease 1
+rat PCI mRNA
+rat PPT
+rat SP-A isoforms
+rat uncoupling protein gene promoter
+rat Zn-15
+rbcL
+rbcS
+RBE sequences
+RBP-Jkappa
+RCA
+rearranged bcl-2 gene
+rearranged TCR genes
+receptor for hyaluronan mediated motility
+receptor G(q/11) protein
+receptor-like protein kinase
+receptor protein kinases from plants
+receptor protein tyrosine kinase
+recombinant BCL-6
+recombinant bovine proenteropeptidase
+recombinant CREB
+recombinant GBF
+recombinant granulocyte-macrophage colony stimulating factor
+Recombinant human serum albumin
+Recombinant human TFIID
+recombinant IFN alpha-2b
+recombinant interleukin-2
+Recombinant Leishmania surface glycoprotein GP63
+recombinant purified Ets-1 protein
+recombinant SF-1 protein
+recombinant TARC
+recombinant USF proteins
+recombinant vaccinia virus-expressed mutant P1 polyproteins
+recombinant wild-type p27
+recombinase
+reduced folate carrier cDNA
+reduced wild-type OxyR
+regulated upon activation, normally T-cell expressed and presumably secreted
+regulation of complement activation
+regulator
+RelA (p65)
+RelA(p65)
+related adhesion focal tyrosine kinase
+rel domain
+REP2
+Rep63A (513 amino acids [aa])
+repA
+Replacement variant histone genes
+replication factor 1a
+replication initiator proteins Mcm2-7
+reporter gene chloramphenicol acetyltransferase
+reticulin
+retinoblastoma family of tumor suppressor proteins
+Retinoic acid-related Orphan receptor Response Element
+retinoid and estrogen receptors
+retrotransposon Ty5
+rev+
+reverse transcriptase domain
+Rev mutant
+RFX complex
+(RHAMM) gene
+RhoA locus
+Rho family
+rho genes
+RI
+RI alpha complementary RNA
+RIF1 interaction domains
+Ring 4
+RIP-140
+rLHR
+R-MGMT
+RMP
+RNA1
+RNA 2 ORFs
+RNA-dependent RNA polymerase domains
+RNA-DNA helicase
+RNA ligase
+RNA polymerase II interaction domain
+RNA polymerase III promoter
+RNA polymerases I, II, and III
+RNA-PTB complexes
+RNase III
+RNase P RNA of S. cerevisiae
+Ro
+Ros
+RP2 locus at Xp11.3
+RPO1 polypeptides of IIV6, LCDV, and MCV-1
+R protein
+RsaA C terminus (amino acid 784)
+RXR component
+RXR heterodimers
+RXR homodimers
+RZR beta
+S100
+S-100
+S-10 ribosomal protein operon of Escherichia coli
+S2 protein
+S2 receptors
+S7
+Sa
+sacPA operon in Bacillus subtilis
+Sak kinase
+SalI
+salivary and serum lysozyme
+scaffolding protein
+SCAP
+S. cerevisiae alpha-factor prepro secretion leader
+S. cerevisiae invertase signal sequence
+S. cerevisiae URA2 gene product
+SCF
+Schizosaccharomyces pombe Cdc5
+Schizosaccharomyces pombe rad1+ cell cycle checkpoint control gene
+Sec
+Sec13p protein complex
+Sec23p protein complex
+secretin
+secretor blood group alpha (1,2)fucosyltransferase genes
+secretory HI antibodies
+selenoprotein
+seminal plasma PSA
+sequences of gamma-prolamins of maize, and Coix
+serine lysosomal proteinases
+serine proteinase domain (the N-terminal 181 residues of NS3)
+serotonin autoreceptor
+serotonin receptor
+serum ACE
+Serum ACTH
+Serum alkaline phosphatase
+Serum amylase
+serum aspartate aminotransferase
+serum CK-MB
+serum CPK
+serum CPN
+serum C-reactive protein
+Serum creatine kinase
+serum CRP
+serum ferritin
+serum fibrinogen
+serum GH
+serum hepatocyte growth factor
+serum IgA
+serum IgE
+Serum IgE
+serum IgE antibodies to P. orbiculare
+serum IgG
+serum IgM
+Serum IgM
+serum IgM anti-GM1 antibodies
+serum immunoglobulin E
+Serum insulin-like growth factor I
+serum lactate dehydrogenase
+serum LDH
+serum LH
+serum lipoprotein(a)
+serum myoglobin
+serum p24 antigen
+serum pepsinogen
+serum prostate specific antigen
+serum PSA
+serum PTH
+Serum PTH
+serum thyroglobulin
+serum thyroxin
+Serum TNF
+serum TNF-a
+serum TSH
+serum VEGF
+SETA
+S. griseus proteases A, B, and C
+SH2-domain
+SH2 domain-containing inositol 5'-phosphatase
+SH3-like
+"SH3" segment
+Shc chimera
+SHP-1-(Cys --> Ser)
+sialophorin mRNAs of 1.9 and 4.3 kb
+sickle-hemoglobin C
+sIgM+
+sigma 3
+sigma factor sigmaB in Staphylococcus aureus
+signal sequence-deleted CD4 cDNA
+signal transducer and activator of transcription factors
+signal transducers and activators of transcription
+silent information regulator Sir4p
+silk gland-specific tRNA(SG)(Ala) gene
+simian virus 40 large tumor antigen
+simian virus 40 (SV40) promoter
+single C motif-1
+single-strand DNA exonuclease
+Sir factors
+six-member minichromosome maintenance protein complex
+skeletal alpha-actin
+skeletal alpha-actin gene promoters
+skin permeability factor
+SL3-3
+slk1 null mutants
+Sl(pan)/Sl(pan)
+Smad1 or 5
+Smad family members
+small GTP-binding protein
+small GTP binding proteins Rac1
+small GTP-binding proteins Rac1
+small monomeric GTP-binding proteins
+Sm-E
+sms
+SN antibody
+Snf1 kinase complex
+snRNP core proteins
+SNT
+sodium iodide symporter
+sodium-potassium-activated ATPase
+soluble egg antigen
+soluble PTPs
+Somatostatin
+sorting nexins
+Sp1-family transcription factors
+SP1 sites
+SP-A gene
+Spec1
+Spec2
+special A-T-rich binding protein 1
+spi 2.3 3' UTR silencer
+spleen necrosis virus (SNV) long terminal repeats
+splicing factor 2
+sporulation-specific 1,3-beta-glucanase
+Src family
+Src homology
+Src homology 2 and 3
+Src homology 2 domain-containing proteins
+Src homology regions 2 and 3
+Srf
+SRP54 protein
+SRP receptor
+sry messenger RNAs
+Ssa
+ssDNA- and RNA-binding protein
+SstI-G
+staphylococcal enterotoxins
+Staphylococcus aureus enterotoxin C2
+STAT1 homodimer
+STAT1 homodimers
+statin
+(STEP) gene
+sterol 14-demethylase P450
+stomatitis G protein
+S transcripts
+streptococcal pyrogenic exotoxins I and J
+STR family
+stripe 2
+subunit-a gene
+subunit VIb
+sugar transporters
+Su(H)
+sulfate activation locus
+SUP45 in Saccharomyces cerevisiae
+supF suppressor tRNA gene from Escherichia coli
+suppressors of cytokine signalling
+Surf-5
+surface Fc receptors
+su(s)
+SU(S)
+SV40 early
+SV40 enhancer
+SV40 virus early region promoter
+SWI4,6
+synaptotagmins I and II
+synthetic eIF-2alpha peptide
+synthetic GnRH
+synthetic Max
+Syrian hamster CAD gene
+Syrian hamster multifunctional protein CAD
+T'
+T'(135)
+T2/S-RNase superfamily
+T4 DNA polymerase
+T4 gp17
+TAAT-1 element reporter
+TAF(II)140
+TAF(II)s
+tal-1 mutant
+tamarin variable region genes
+tandem Ets sites
+T-antigen
+tat+
+TATA binding protein (TBP) associated factors
+TATA box-binding subunit of TFIID
+tat/S
+T beta L
+TBP-DR2
+TBP wild-type
+T-cell leukemia breakpoint
+T cell receptor (TCR)-alpha/betas
+T cell receptor (TCR) alpha gene
+TCR alpha and beta gene
+TCR beta
+TCR complexes
+TEF
+telomerase RNA-protein complex
+temperature-sensitive mutants of Sindbis virus: complementation group F mutants
+tenascin-C promoter constructs
+terminal protein
+terminase interaction sites
+testis-specific mRNA transcript
+TFIID complexes
+Tg
+TG
+Thermus pyr promoter region
+ThrRS/CGU operator complex
+thyroid transcription factor-1
+Ti alpha-beta
+TIMP
+TM Env protein
+TNFR-associated factor (TRAF) 1
+TnIcardiac
+tobacco etch virus (TEV) polymerase
+top2
+top2 temperature-sensitive (ts) double mutant
+topo II alpha mRNA transcript
+topoisomerase
+total-CPK
+TP
+TRAF2 mutant
+TR alpha
+trans-activator of transcription
+transcript D
+transcription activation domain of stage-specific activator protein
+transcription factor AP-1
+transcription factor AP-2
+transcription factor CHOP
+transcription factor CREB
+transcription factor IIA
+transcription factor IIIB
+transcription factors NF-kappaB
+transcription factor Sp1
+transcription factor YY1
+transcripts C and E
+Transforming growth factor (TGF)-beta1
+translation elongation factor-1 alpha
+translation upstream factor
+transporter proteins
+TraR fusion
+TRE-2
+trehalose-6-phosphate synthase/phosphatase complex
+TRF.C
+triple-mutant TBP
+trk
+Trk/Nerve Growth Factor receptor
+tRNA(His) genes
+tRNA(Met)i
+tRNA(Phe)
+tRNA(trp)(CCA)-gene transcript in mitochondria
+trp t' rho-dependent termination sequence
+TRs
+truncated avian integrins
+Truncated ICSBP
+truncated inositol 1,4,5-trisphosphate receptor subunits
+TSH-R
+T/T(F)
+TTF-1-binding sites (TBE) 1, 3, and 4
+tTG
+T/T(L)
+tumor necrosis factor (TNF)alpha
+tumor necrosis factor (TNF)-alpha
+tumor-suppressor protein pRb
+twist expression domain
+two-domain prokaryotic betagamma-crystallin fold family member
+Ty1 RNA
+TY epitope
+type 1 insulin-like growth factor (IGF) receptor
+type 5 acid phosphatase promoter
+type I IFNs
+type III group B Streptococcus antigen
+type II regulatory subunit of protein kinase A
+Type I transforming growth factor-beta (TGF-beta) receptor
+tyrosinase
+tyrosinase-related protein 1
+Tyrosine kinase
+tyrosine phosphatase-1
+tyrosine phosphatase SHPTP1
+tyrosine protein kinase
+U14
+U16+ gene products
+U1 small nuclear ribonucleoproteins
+U2 RNA region
+U2 small nuclear ribonucleoprotein particle [snRNP] auxiliary factor
+U5 RNA
+UBI4 5'-CLN3
+ubiquitin fusion proteins
+UDP-GlcNAc
+uhp(+)
+UL26
+ulp1(ts)
+uPA
+ure2 delta mutation
+urinary albumin
+urinary amylase
+USF2 translation initiation site
+USH1
+U snRNA genes
+V1a/V2 hybrid receptors
+V1 ORF
+VAI
+Val135 mutant of p53
+var genes
+variant tRNA(Val)(UAC) gene
+vascular smooth muscle cell AT1a receptor cDNAs
+vasopressin V1b receptors
+V. cholerae fur mutant
+V delta 2D delta 3 rearrangements
+VDR gene
+vertebrate PAP
+very-low-density lipoprotein
+vesicular stomatitis virus glycoprotein
+VH4
+VH domain
+vinculin cDNA from chick-embryo fibroblasts
+viral interferon regulatory factor
+viral oncoprotein E1A
+viral PR
+viral-sis messenger RNA
+virulence gene cluster in L. ivanovii
+vit A2
+VP16 activation domain
+VP16 core
+Vpr
+vpr open reading frame of human immunodeficiency virus type 1 (HIV-1)
+vs-1
+vspA
+(v-)src
+v-src mutants
+wee1
+Wee1-binding protein(s)
+wheat eIF-(iso)4F
+white gene
+Wild type and mutant Epo cDNAs
+wild type and variant c-src genes
+wild type rat LH/CG receptor
+Williams-Beuren syndrome (WBS) deletion
+winged helix
+wt human retinoblastoma susceptibility gene product
+wt p53
+Xenopus homolog of the mos protooncogene
+Xenopus tRNA
+XPG regions
+xtRNA
+xylE transcriptional fusion
+YB-1
+yeast ABF-1 consensus sequence
+yeast and Escherichia coli gamma-glutamyl kinases
+yeast homologue of mammalian epsilon-COP
+yeast peroxisomal matrix proteins
+yeast triose phosphate isomerase promoter
+YFV
+Y' repeated sequence families
+YY1 binding sites
+zein
+zeta 2 globin
+ZFP
+zinc finger domain protein
+zinc knuckle 9G8 variant
+Zta activation domain

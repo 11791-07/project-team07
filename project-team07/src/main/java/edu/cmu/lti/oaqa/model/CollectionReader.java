@@ -25,7 +25,8 @@ public class CollectionReader extends CollectionReader_ImplBase {
 	public void initialize(){
 		
 		String filePath = "/questions.json";
-		//String filePath = "/questions_single.json";
+		//String filePath = "/questions_single2.json";
+		//String filePath = "/ZeroQuestion.json";
 		Object value = filePath;
 		if (String.class.isAssignableFrom(value.getClass())) {
 			question_list = TestSet

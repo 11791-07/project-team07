@@ -1,0 +1,146 @@
+****  is rheumatoid arthritis more common in men or women ****
+
+CONCEPT  HELPER     rheumatoid arthritis in
+
+
+****  are there any dnmt3 proteins present in plants ****
+dnmt3 proteins  ###  
+CONCEPT  HELPER     plant proteins
+
+
+****  what is the most prominent sequence consensus for the polyadenylation site ****
+
+CONCEPT  HELPER     consensus sequence
+
+
+****  what is the function of the mammalian gene irg1 ****
+mammalian gene  ###  irg1  ###  
+CONCEPT  HELPER     irg1 a gene
+
+
+****  is thrombophilia related to increased risk of miscarriage ****
+
+CONCEPT  HELPER     miscarriage thrombophilia risk
+
+
+****  which extra thyroid tissues have thyrotropin  tsh  receptors ****
+thyrotropin  tsh  receptors  ###  
+CONCEPT  HELPER     thyrotropin receptor
+
+
+****  what is the methyl donor of dna  cytosine-5 -methyltransferases ****
+dna  cytosine-5 -methyltransferases  ###  
+CONCEPT  HELPER     dna
+
+
+****  super-silac is a method used in quantitative proteomics  what is the super-silac mix 
+ silac  stable isotopic labelling by aminoacids in cell culture ****
+super-silac  ###  
+CONCEPT  HELPER     stable cell culture
+
+
+****  tumors of which three organs are classically associated with the multiple endocrine neoplasia type 1 syndrome ****
+
+CONCEPT  HELPER     multiple endocrine neoplasia type 1
+
+
+****  what is the mechanism of action of anticoagulant medication dabigatran ****
+
+CONCEPT  HELPER     of action
+
+
+****  is mammaprint approved by the united states food and drug administration ****
+
+CONCEPT  HELPER     united states food and drug administration
+
+
+****  which acetylcholinesterase inhibitors are used for treatment of myasthenia gravis ****
+acetylcholinesterase  ###  
+CONCEPT  HELPER     myasthenia gravis acetylcholinesterase
+
+
+****  which medication should be administered when managing patients with suspected acute opioid overdose ****
+
+CONCEPT  HELPER     patient medication
+
+
+****  does the oncotype dx test work with paraffin embedded tissues ****
+oncotype dx  ###  
+CONCEPT  HELPER     paraffin tissue doe
+
+
+****  is depression associated with poor prognosis of brain tumor patients ****
+
+CONCEPT  HELPER     brain prognosis tumor of
+
+
+****  what is known about the reimbursement of viagra****
+
+CONCEPT  HELPER     viagra reimbursement
+
+
+****  does her2 under-expression lead to favorable response to trastuzumab ****
+her2  ###  
+CONCEPT  HELPER     trastuzumab her2
+
+
+****  can alzheimer's disease related mirnas be detected in patients' blood ****
+can alzheimer'  ###  
+CONCEPT  HELPER     alzheimer disease alzheimer's mirna blood
+
+
+****  which antiepileptic drug is most strongly associated with spina bifida  ****
+
+CONCEPT  HELPER     spina bifida antiepileptic
+
+
+****  where in the cell do we find the protein cep135 ****
+protein cep135  ###  
+CONCEPT  HELPER     find cep135 protein
+
+
+****  in which isochores are alu elements enriched ****
+
+CONCEPT  HELPER     alu elements isochores is element
+
+
+****  which forms of cancer is the tpl2 gene associated with ****
+tpl2  ###  
+CONCEPT  HELPER     gene tpl2
+
+
+****  what is the insure procedure in premature babies ****
+
+CONCEPT  HELPER     babie babi
+
+
+****  which species may be used for the biotechnological production of itaconic acid ****
+
+CONCEPT  HELPER    
+
+
+****  what is the role of trh in hypertension ****
+trh  ###  
+CONCEPT  HELPER     role trh
+
+
+****  which histone marks are deposited by set7 ****
+histone  ###  
+CONCEPT  HELPER     set7
+
+
+****  are there any desmins present in plants ****
+
+CONCEPT  HELPER     desmin
+
+
+****  is it possible to detect survivin protein expression in normal human adult tissues ****
+survivin protein  ###  
+CONCEPT  HELPER     survivin human protein
+
+
+****  how do histone methyltransferases cause histone modification ****
+how do histone methyltransferases  ###  
+CONCEPT  HELPER     how modification methyltransferases methyltransferase do
+
+

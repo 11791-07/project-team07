@@ -37,7 +37,7 @@ public class TripleAE extends JCasAnnotator_ImplBase {
 		String qID = question.getId();
 		String qType = question.getQuestionType();
 		String qText = question.getText();
-        /*
+        //*
 		try {
 	        String triple_keyword = qText;
 	        LinkedLifeDataServiceResponse.Result linkedLifeDataResult = service
@@ -52,6 +52,6 @@ public class TripleAE extends JCasAnnotator_ImplBase {
         } catch (Exception e){
         	System.out.println("Failed to extract triples");
         }
-        */
+        //*/
 	}
 }
