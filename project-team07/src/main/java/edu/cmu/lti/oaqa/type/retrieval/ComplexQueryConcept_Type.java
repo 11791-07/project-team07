@@ -14,14 +14,14 @@ import org.apache.uima.cas.Feature;
 
 /** A hierarchical query concept represented by a query operation on a list of concepts
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
- * @generated */
+ *  */
 public class ComplexQueryConcept_Type extends QueryConcept_Type {
-  /** @generated 
+  /**  
    * @return the generator for this type
    */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
-  /** @generated */
+  /**  */
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
@@ -37,19 +37,19 @@ public class ComplexQueryConcept_Type extends QueryConcept_Type {
         } else return new ComplexQueryConcept(addr, ComplexQueryConcept_Type.this);
   	  }
     };
-  /** @generated */
+  /**  */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = ComplexQueryConcept.typeIndexID;
-  /** @generated 
-     @modifiable */
+  /**  
+      */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.oaqa.type.retrieval.ComplexQueryConcept");
  
-  /** @generated */
+  /**  */
   final Feature casFeat_operator;
-  /** @generated */
+  /**  */
   final int     casFeatCode_operator;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -58,7 +58,7 @@ public class ComplexQueryConcept_Type extends QueryConcept_Type {
       jcas.throwFeatMissing("operator", "edu.cmu.lti.oaqa.type.retrieval.ComplexQueryConcept");
     return ll_cas.ll_getRefValue(addr, casFeatCode_operator);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -69,11 +69,11 @@ public class ComplexQueryConcept_Type extends QueryConcept_Type {
     
   
  
-  /** @generated */
+  /**  */
   final Feature casFeat_operatorArgs;
-  /** @generated */
+  /**  */
   final int     casFeatCode_operatorArgs;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -82,7 +82,7 @@ public class ComplexQueryConcept_Type extends QueryConcept_Type {
       jcas.throwFeatMissing("operatorArgs", "edu.cmu.lti.oaqa.type.retrieval.ComplexQueryConcept");
     return ll_cas.ll_getRefValue(addr, casFeatCode_operatorArgs);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -96,7 +96,7 @@ public class ComplexQueryConcept_Type extends QueryConcept_Type {
 
 
   /** initialize variables to correspond with Cas Type and Features
-	 * @generated
+	 * 
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */

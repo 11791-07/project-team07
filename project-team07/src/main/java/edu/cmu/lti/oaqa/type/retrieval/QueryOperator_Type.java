@@ -15,14 +15,14 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 /** A query operator in the abstract search query model.
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
- * @generated */
+ *  */
 public class QueryOperator_Type extends TOP_Type {
-  /** @generated 
+  /**  
    * @return the generator for this type
    */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
-  /** @generated */
+  /**  */
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
@@ -38,19 +38,19 @@ public class QueryOperator_Type extends TOP_Type {
         } else return new QueryOperator(addr, QueryOperator_Type.this);
   	  }
     };
-  /** @generated */
+  /**  */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = QueryOperator.typeIndexID;
-  /** @generated 
-     @modifiable */
+  /**  
+      */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.oaqa.type.retrieval.QueryOperator");
  
-  /** @generated */
+  /**  */
   final Feature casFeat_name;
-  /** @generated */
+  /**  */
   final int     casFeatCode_name;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -59,7 +59,7 @@ public class QueryOperator_Type extends TOP_Type {
       jcas.throwFeatMissing("name", "edu.cmu.lti.oaqa.type.retrieval.QueryOperator");
     return ll_cas.ll_getStringValue(addr, casFeatCode_name);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -70,11 +70,11 @@ public class QueryOperator_Type extends TOP_Type {
     
   
  
-  /** @generated */
+  /**  */
   final Feature casFeat_args;
-  /** @generated */
+  /**  */
   final int     casFeatCode_args;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -83,7 +83,7 @@ public class QueryOperator_Type extends TOP_Type {
       jcas.throwFeatMissing("args", "edu.cmu.lti.oaqa.type.retrieval.QueryOperator");
     return ll_cas.ll_getRefValue(addr, casFeatCode_args);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -97,7 +97,7 @@ public class QueryOperator_Type extends TOP_Type {
 
 
   /** initialize variables to correspond with Cas Type and Features
-	 * @generated
+	 * 
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */

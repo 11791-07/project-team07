@@ -14,30 +14,30 @@ import org.apache.uima.jcas.cas.TOP;
 /** A ranked list of candidate answers.
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
  * XML source: /home/mog/dev/11791/project/project-team07-archetype/src/main/resources/type/OAQATypes.xml
- * @generated */
+ *  */
 public class AnswerList extends TOP {
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(AnswerList.class);
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
-  /** @generated
+  /** 
    * @return index of the type  
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
   /** Never called.  Disable default constructor
-   * @generated */
+   *  */
   protected AnswerList() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
-   * @generated
+   * 
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
@@ -46,7 +46,7 @@ public class AnswerList extends TOP {
     readObject();
   }
   
-  /** @generated
+  /** 
    * @param jcas JCas to which this Feature Structure belongs 
    */
   public AnswerList(JCas jcas) {
@@ -59,7 +59,7 @@ public class AnswerList extends TOP {
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   *  modifiable 
    */
   private void readObject() {/*default - does nothing empty block */}
      
@@ -69,7 +69,7 @@ public class AnswerList extends TOP {
   //* Feature: answerList
 
   /** getter for answerList - gets Hit list of candidate answers, rank ordered, with highest scoring answer first.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public FSArray getAnswerList() {
@@ -78,7 +78,7 @@ public class AnswerList extends TOP {
     return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnswerList_Type)jcasType).casFeatCode_answerList)));}
     
   /** setter for answerList - sets Hit list of candidate answers, rank ordered, with highest scoring answer first. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setAnswerList(FSArray v) {
@@ -87,7 +87,7 @@ public class AnswerList extends TOP {
     jcasType.ll_cas.ll_setRefValue(addr, ((AnswerList_Type)jcasType).casFeatCode_answerList, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for answerList - gets an indexed value - Hit list of candidate answers, rank ordered, with highest scoring answer first.
-   * @generated
+   * 
    * @param i index in the array to get
    * @return value of the element at index i 
    */
@@ -98,7 +98,7 @@ public class AnswerList extends TOP {
     return (Answer)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AnswerList_Type)jcasType).casFeatCode_answerList), i)));}
 
   /** indexed setter for answerList - sets an indexed value - Hit list of candidate answers, rank ordered, with highest scoring answer first.
-   * @generated
+   * 
    * @param i index in the array to set
    * @param v value to set into the array 
    */

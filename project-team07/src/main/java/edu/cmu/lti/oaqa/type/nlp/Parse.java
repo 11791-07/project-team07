@@ -14,30 +14,30 @@ import org.apache.uima.jcas.cas.TOP;
 /** A data structure that represents various NLP annotations from a parser, e.g. lists of tokens, semantic roles, etc.
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
  * XML source: /home/mog/dev/11791/project/project-team07-archetype/src/main/resources/type/OAQATypes.xml
- * @generated */
+ *  */
 public class Parse extends TOP {
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Parse.class);
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
-  /** @generated
+  /** 
    * @return index of the type  
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
   /** Never called.  Disable default constructor
-   * @generated */
+   *  */
   protected Parse() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
-   * @generated
+   * 
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
@@ -46,7 +46,7 @@ public class Parse extends TOP {
     readObject();
   }
   
-  /** @generated
+  /** 
    * @param jcas JCas to which this Feature Structure belongs 
    */
   public Parse(JCas jcas) {
@@ -59,7 +59,7 @@ public class Parse extends TOP {
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   *  modifiable 
    */
   private void readObject() {/*default - does nothing empty block */}
      
@@ -69,7 +69,7 @@ public class Parse extends TOP {
   //* Feature: tokens
 
   /** getter for tokens - gets A list of tokens.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public FSList getTokens() {
@@ -78,7 +78,7 @@ public class Parse extends TOP {
     return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Parse_Type)jcasType).casFeatCode_tokens)));}
     
   /** setter for tokens - sets A list of tokens. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setTokens(FSList v) {
@@ -91,7 +91,7 @@ public class Parse extends TOP {
   //* Feature: semanticRoles
 
   /** getter for semanticRoles - gets A list of semantic roles.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public FSList getSemanticRoles() {
@@ -100,7 +100,7 @@ public class Parse extends TOP {
     return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Parse_Type)jcasType).casFeatCode_semanticRoles)));}
     
   /** setter for semanticRoles - sets A list of semantic roles. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setSemanticRoles(FSList v) {

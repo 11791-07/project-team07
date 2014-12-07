@@ -15,30 +15,30 @@ import org.apache.uima.jcas.cas.StringArray;
 /** Annotation on a token, which may have arguments if they are predicates; useful in transforming text into a "logical form", with affordances similar to the ones provided in Extended WordNet and the like. --- Source: Murdock
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
  * XML source: /home/mog/dev/11791/project/project-team07-archetype/src/main/resources/type/OAQATypes.xml
- * @generated */
+ *  */
 public class Token extends Annotation {
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Token.class);
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
-  /** @generated
+  /** 
    * @return index of the type  
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
   /** Never called.  Disable default constructor
-   * @generated */
+   *  */
   protected Token() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
-   * @generated
+   * 
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
@@ -47,7 +47,7 @@ public class Token extends Annotation {
     readObject();
   }
   
-  /** @generated
+  /** 
    * @param jcas JCas to which this Feature Structure belongs 
    */
   public Token(JCas jcas) {
@@ -55,7 +55,7 @@ public class Token extends Annotation {
     readObject();   
   } 
 
-  /** @generated
+  /** 
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
@@ -72,7 +72,7 @@ public class Token extends Annotation {
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   *  modifiable 
    */
   private void readObject() {/*default - does nothing empty block */}
      
@@ -82,7 +82,7 @@ public class Token extends Annotation {
   //* Feature: arguments
 
   /** getter for arguments - gets The arguments
-   * @generated
+   * 
    * @return value of the feature 
    */
   public FSArray getArguments() {
@@ -91,7 +91,7 @@ public class Token extends Annotation {
     return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Token_Type)jcasType).casFeatCode_arguments)));}
     
   /** setter for arguments - sets The arguments 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setArguments(FSArray v) {
@@ -100,7 +100,7 @@ public class Token extends Annotation {
     jcasType.ll_cas.ll_setRefValue(addr, ((Token_Type)jcasType).casFeatCode_arguments, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for arguments - gets an indexed value - The arguments
-   * @generated
+   * 
    * @param i index in the array to get
    * @return value of the element at index i 
    */
@@ -111,7 +111,7 @@ public class Token extends Annotation {
     return (Token)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Token_Type)jcasType).casFeatCode_arguments), i)));}
 
   /** indexed setter for arguments - sets an indexed value - The arguments
-   * @generated
+   * 
    * @param i index in the array to set
    * @param v value to set into the array 
    */
@@ -126,7 +126,7 @@ public class Token extends Annotation {
   //* Feature: argumentLabels
 
   /** getter for argumentLabels - gets The slot labels for the arguments (e.g., subj, obj, objprep)
-   * @generated
+   * 
    * @return value of the feature 
    */
   public StringArray getArgumentLabels() {
@@ -135,7 +135,7 @@ public class Token extends Annotation {
     return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Token_Type)jcasType).casFeatCode_argumentLabels)));}
     
   /** setter for argumentLabels - sets The slot labels for the arguments (e.g., subj, obj, objprep) 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setArgumentLabels(StringArray v) {
@@ -144,7 +144,7 @@ public class Token extends Annotation {
     jcasType.ll_cas.ll_setRefValue(addr, ((Token_Type)jcasType).casFeatCode_argumentLabels, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for argumentLabels - gets an indexed value - The slot labels for the arguments (e.g., subj, obj, objprep)
-   * @generated
+   * 
    * @param i index in the array to get
    * @return value of the element at index i 
    */
@@ -155,7 +155,7 @@ public class Token extends Annotation {
     return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Token_Type)jcasType).casFeatCode_argumentLabels), i);}
 
   /** indexed setter for argumentLabels - sets an indexed value - The slot labels for the arguments (e.g., subj, obj, objprep)
-   * @generated
+   * 
    * @param i index in the array to set
    * @param v value to set into the array 
    */
@@ -170,7 +170,7 @@ public class Token extends Annotation {
   //* Feature: parse
 
   /** getter for parse - gets A parse for which this token was a head (if any)
-   * @generated
+   * 
    * @return value of the feature 
    */
   public Token getParse() {
@@ -179,7 +179,7 @@ public class Token extends Annotation {
     return (Token)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Token_Type)jcasType).casFeatCode_parse)));}
     
   /** setter for parse - sets A parse for which this token was a head (if any) 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setParse(Token v) {
@@ -192,7 +192,7 @@ public class Token extends Annotation {
   //* Feature: semanticType
 
   /** getter for semanticType - gets A semantic type, typically the name of an Entity Annotation type
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getSemanticType() {
@@ -201,7 +201,7 @@ public class Token extends Annotation {
     return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_semanticType);}
     
   /** setter for semanticType - sets A semantic type, typically the name of an Entity Annotation type 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setSemanticType(String v) {
@@ -214,7 +214,7 @@ public class Token extends Annotation {
   //* Feature: partOfSpeech
 
   /** getter for partOfSpeech - gets Coarse-grained part of speech --- Example: noun, verb, adj, cord
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getPartOfSpeech() {
@@ -223,7 +223,7 @@ public class Token extends Annotation {
     return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_partOfSpeech);}
     
   /** setter for partOfSpeech - sets Coarse-grained part of speech --- Example: noun, verb, adj, cord 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setPartOfSpeech(String v) {
@@ -236,7 +236,7 @@ public class Token extends Annotation {
   //* Feature: lemmaForm
 
   /** getter for lemmaForm - gets A canonical/lemmatized form of the covered text
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getLemmaForm() {
@@ -245,7 +245,7 @@ public class Token extends Annotation {
     return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_lemmaForm);}
     
   /** setter for lemmaForm - sets A canonical/lemmatized form of the covered text 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setLemmaForm(String v) {
@@ -258,7 +258,7 @@ public class Token extends Annotation {
   //* Feature: isMainReference
 
   /** getter for isMainReference - gets If true, then this is the main reference to the first argument.  Modifiers and anaphoric references do not have isMainReference set. --- Example: "A dark blue [hat]"
-   * @generated
+   * 
    * @return value of the feature 
    */
   public boolean getIsMainReference() {
@@ -267,7 +267,7 @@ public class Token extends Annotation {
     return jcasType.ll_cas.ll_getBooleanValue(addr, ((Token_Type)jcasType).casFeatCode_isMainReference);}
     
   /** setter for isMainReference - sets If true, then this is the main reference to the first argument.  Modifiers and anaphoric references do not have isMainReference set. --- Example: "A dark blue [hat]" 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setIsMainReference(boolean v) {
@@ -280,7 +280,7 @@ public class Token extends Annotation {
   //* Feature: isVariable
 
   /** getter for isVariable - gets True iff the token expresses some unknown entity, typically the focus of a question:  --- Example: "[Who] shot JR?", "What [city] was JR born in?"
-   * @generated
+   * 
    * @return value of the feature 
    */
   public boolean getIsVariable() {
@@ -289,7 +289,7 @@ public class Token extends Annotation {
     return jcasType.ll_cas.ll_getBooleanValue(addr, ((Token_Type)jcasType).casFeatCode_isVariable);}
     
   /** setter for isVariable - sets True iff the token expresses some unknown entity, typically the focus of a question:  --- Example: "[Who] shot JR?", "What [city] was JR born in?" 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setIsVariable(boolean v) {
@@ -302,7 +302,7 @@ public class Token extends Annotation {
   //* Feature: determiner
 
   /** getter for determiner - gets The determiner attached to the node, if any --- Example: [the] book
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getDeterminer() {
@@ -311,7 +311,7 @@ public class Token extends Annotation {
     return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_determiner);}
     
   /** setter for determiner - sets The determiner attached to the node, if any --- Example: [the] book 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setDeterminer(String v) {

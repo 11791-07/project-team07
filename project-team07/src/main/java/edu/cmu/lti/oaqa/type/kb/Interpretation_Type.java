@@ -15,14 +15,14 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 /** A container that integrates Concepts and ConceptMentions.
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
- * @generated */
+ *  */
 public class Interpretation_Type extends TOP_Type {
-  /** @generated 
+  /**  
    * @return the generator for this type
    */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
-  /** @generated */
+  /**  */
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
@@ -38,19 +38,19 @@ public class Interpretation_Type extends TOP_Type {
         } else return new Interpretation(addr, Interpretation_Type.this);
   	  }
     };
-  /** @generated */
+  /**  */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = Interpretation.typeIndexID;
-  /** @generated 
-     @modifiable */
+  /**  
+      */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.oaqa.type.kb.Interpretation");
  
-  /** @generated */
+  /**  */
   final Feature casFeat_concepts;
-  /** @generated */
+  /**  */
   final int     casFeatCode_concepts;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -59,7 +59,7 @@ public class Interpretation_Type extends TOP_Type {
       jcas.throwFeatMissing("concepts", "edu.cmu.lti.oaqa.type.kb.Interpretation");
     return ll_cas.ll_getRefValue(addr, casFeatCode_concepts);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -70,11 +70,11 @@ public class Interpretation_Type extends TOP_Type {
     
   
  
-  /** @generated */
+  /**  */
   final Feature casFeat_mentions;
-  /** @generated */
+  /**  */
   final int     casFeatCode_mentions;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -83,7 +83,7 @@ public class Interpretation_Type extends TOP_Type {
       jcas.throwFeatMissing("mentions", "edu.cmu.lti.oaqa.type.kb.Interpretation");
     return ll_cas.ll_getRefValue(addr, casFeatCode_mentions);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -97,7 +97,7 @@ public class Interpretation_Type extends TOP_Type {
 
 
   /** initialize variables to correspond with Cas Type and Features
-	 * @generated
+	 * 
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */

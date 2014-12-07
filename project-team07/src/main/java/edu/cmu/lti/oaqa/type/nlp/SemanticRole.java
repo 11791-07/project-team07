@@ -13,30 +13,30 @@ import org.apache.uima.jcas.tcas.Annotation;
 /** A semantic role label.
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
  * XML source: /home/mog/dev/11791/project/project-team07-archetype/src/main/resources/type/OAQATypes.xml
- * @generated */
+ *  */
 public class SemanticRole extends Annotation {
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(SemanticRole.class);
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
-  /** @generated
+  /** 
    * @return index of the type  
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
   /** Never called.  Disable default constructor
-   * @generated */
+   *  */
   protected SemanticRole() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
-   * @generated
+   * 
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
@@ -45,7 +45,7 @@ public class SemanticRole extends Annotation {
     readObject();
   }
   
-  /** @generated
+  /** 
    * @param jcas JCas to which this Feature Structure belongs 
    */
   public SemanticRole(JCas jcas) {
@@ -53,7 +53,7 @@ public class SemanticRole extends Annotation {
     readObject();   
   } 
 
-  /** @generated
+  /** 
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
@@ -70,7 +70,7 @@ public class SemanticRole extends Annotation {
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   *  modifiable 
    */
   private void readObject() {/*default - does nothing empty block */}
      
@@ -80,7 +80,7 @@ public class SemanticRole extends Annotation {
   //* Feature: label
 
   /** getter for label - gets The semantic role label.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getLabel() {
@@ -89,7 +89,7 @@ public class SemanticRole extends Annotation {
     return jcasType.ll_cas.ll_getStringValue(addr, ((SemanticRole_Type)jcasType).casFeatCode_label);}
     
   /** setter for label - sets The semantic role label. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setLabel(String v) {

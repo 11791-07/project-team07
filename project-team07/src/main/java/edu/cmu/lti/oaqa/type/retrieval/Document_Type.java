@@ -14,14 +14,14 @@ import org.apache.uima.cas.Feature;
 
 /** A document search result.
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
- * @generated */
+ *  */
 public class Document_Type extends SearchResult_Type {
-  /** @generated 
+  /**  
    * @return the generator for this type
    */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
-  /** @generated */
+  /**  */
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
@@ -37,19 +37,19 @@ public class Document_Type extends SearchResult_Type {
         } else return new Document(addr, Document_Type.this);
   	  }
     };
-  /** @generated */
+  /**  */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = Document.typeIndexID;
-  /** @generated 
-     @modifiable */
+  /**  
+      */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.oaqa.type.retrieval.Document");
  
-  /** @generated */
+  /**  */
   final Feature casFeat_title;
-  /** @generated */
+  /**  */
   final int     casFeatCode_title;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -58,7 +58,7 @@ public class Document_Type extends SearchResult_Type {
       jcas.throwFeatMissing("title", "edu.cmu.lti.oaqa.type.retrieval.Document");
     return ll_cas.ll_getStringValue(addr, casFeatCode_title);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -69,11 +69,11 @@ public class Document_Type extends SearchResult_Type {
     
   
  
-  /** @generated */
+  /**  */
   final Feature casFeat_docId;
-  /** @generated */
+  /**  */
   final int     casFeatCode_docId;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -82,7 +82,7 @@ public class Document_Type extends SearchResult_Type {
       jcas.throwFeatMissing("docId", "edu.cmu.lti.oaqa.type.retrieval.Document");
     return ll_cas.ll_getStringValue(addr, casFeatCode_docId);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -96,7 +96,7 @@ public class Document_Type extends SearchResult_Type {
 
 
   /** initialize variables to correspond with Cas Type and Features
-	 * @generated
+	 * 
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */

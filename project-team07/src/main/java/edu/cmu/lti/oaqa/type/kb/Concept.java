@@ -15,30 +15,30 @@ import org.apache.uima.jcas.cas.TOP;
 /** A superclass for EntityConcept and RelationConcept.
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
  * XML source: /home/mog/dev/11791/project/project-team07-archetype/src/main/resources/type/OAQATypes.xml
- * @generated */
+ *  */
 public class Concept extends TOP {
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Concept.class);
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
-  /** @generated
+  /** 
    * @return index of the type  
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
   /** Never called.  Disable default constructor
-   * @generated */
+   *  */
   protected Concept() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
-   * @generated
+   * 
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
@@ -47,7 +47,7 @@ public class Concept extends TOP {
     readObject();
   }
   
-  /** @generated
+  /** 
    * @param jcas JCas to which this Feature Structure belongs 
    */
   public Concept(JCas jcas) {
@@ -60,7 +60,7 @@ public class Concept extends TOP {
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   *  modifiable 
    */
   private void readObject() {/*default - does nothing empty block */}
      
@@ -70,7 +70,7 @@ public class Concept extends TOP {
   //* Feature: name
 
   /** getter for name - gets The name of the concept.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getName() {
@@ -79,7 +79,7 @@ public class Concept extends TOP {
     return jcasType.ll_cas.ll_getStringValue(addr, ((Concept_Type)jcasType).casFeatCode_name);}
     
   /** setter for name - sets The name of the concept. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setName(String v) {
@@ -92,7 +92,7 @@ public class Concept extends TOP {
   //* Feature: uris
 
   /** getter for uris - gets Array of uris that identify this named entity.  There may be more than one uri if this named entity is ambiguous.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public StringList getUris() {
@@ -101,7 +101,7 @@ public class Concept extends TOP {
     return (StringList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Concept_Type)jcasType).casFeatCode_uris)));}
     
   /** setter for uris - sets Array of uris that identify this named entity.  There may be more than one uri if this named entity is ambiguous. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setUris(StringList v) {
@@ -114,7 +114,7 @@ public class Concept extends TOP {
   //* Feature: mentions
 
   /** getter for mentions - gets A list of ConceptMentions (text spans) that might be surface forms to this concept.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public FSList getMentions() {
@@ -123,7 +123,7 @@ public class Concept extends TOP {
     return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Concept_Type)jcasType).casFeatCode_mentions)));}
     
   /** setter for mentions - sets A list of ConceptMentions (text spans) that might be surface forms to this concept. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setMentions(FSList v) {

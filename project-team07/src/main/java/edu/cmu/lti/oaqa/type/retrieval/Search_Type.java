@@ -15,14 +15,14 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 /** An object that holds a query and results for a search (text search, fact search, KB search, etc.)
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
- * @generated */
+ *  */
 public class Search_Type extends TOP_Type {
-  /** @generated 
+  /**  
    * @return the generator for this type
    */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
-  /** @generated */
+  /**  */
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
@@ -38,19 +38,19 @@ public class Search_Type extends TOP_Type {
         } else return new Search(addr, Search_Type.this);
   	  }
     };
-  /** @generated */
+  /**  */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = Search.typeIndexID;
-  /** @generated 
-     @modifiable */
+  /**  
+      */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.oaqa.type.retrieval.Search");
  
-  /** @generated */
+  /**  */
   final Feature casFeat_query;
-  /** @generated */
+  /**  */
   final int     casFeatCode_query;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -59,7 +59,7 @@ public class Search_Type extends TOP_Type {
       jcas.throwFeatMissing("query", "edu.cmu.lti.oaqa.type.retrieval.Search");
     return ll_cas.ll_getStringValue(addr, casFeatCode_query);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -70,11 +70,11 @@ public class Search_Type extends TOP_Type {
     
   
  
-  /** @generated */
+  /**  */
   final Feature casFeat_hitList;
-  /** @generated */
+  /**  */
   final int     casFeatCode_hitList;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -83,7 +83,7 @@ public class Search_Type extends TOP_Type {
       jcas.throwFeatMissing("hitList", "edu.cmu.lti.oaqa.type.retrieval.Search");
     return ll_cas.ll_getRefValue(addr, casFeatCode_hitList);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -92,7 +92,7 @@ public class Search_Type extends TOP_Type {
       jcas.throwFeatMissing("hitList", "edu.cmu.lti.oaqa.type.retrieval.Search");
     ll_cas.ll_setRefValue(addr, casFeatCode_hitList, v);}
     
-   /** @generated
+   /** 
    * @param addr low level Feature Structure reference
    * @param i index of item in the array
    * @return value at index i in the array 
@@ -106,7 +106,7 @@ public class Search_Type extends TOP_Type {
 	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_hitList), i);
   }
    
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param i index of item in the array
    * @param v value to set
@@ -121,11 +121,11 @@ public class Search_Type extends TOP_Type {
   }
  
  
-  /** @generated */
+  /**  */
   final Feature casFeat_abstractQuery;
-  /** @generated */
+  /**  */
   final int     casFeatCode_abstractQuery;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -134,7 +134,7 @@ public class Search_Type extends TOP_Type {
       jcas.throwFeatMissing("abstractQuery", "edu.cmu.lti.oaqa.type.retrieval.Search");
     return ll_cas.ll_getRefValue(addr, casFeatCode_abstractQuery);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -145,11 +145,11 @@ public class Search_Type extends TOP_Type {
     
   
  
-  /** @generated */
+  /**  */
   final Feature casFeat_searchId;
-  /** @generated */
+  /**  */
   final int     casFeatCode_searchId;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -158,7 +158,7 @@ public class Search_Type extends TOP_Type {
       jcas.throwFeatMissing("searchId", "edu.cmu.lti.oaqa.type.retrieval.Search");
     return ll_cas.ll_getStringValue(addr, casFeatCode_searchId);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -172,7 +172,7 @@ public class Search_Type extends TOP_Type {
 
 
   /** initialize variables to correspond with Cas Type and Features
-	 * @generated
+	 * 
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */

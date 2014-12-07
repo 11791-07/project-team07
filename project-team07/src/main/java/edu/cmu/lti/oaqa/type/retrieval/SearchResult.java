@@ -15,30 +15,30 @@ import edu.cmu.lti.oaqa.type.answer.CandidateAnswerVariant;
 /** A search result.
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
  * XML source: /home/mog/dev/11791/project/project-team07-archetype/src/main/resources/type/OAQATypes.xml
- * @generated */
+ *  */
 public class SearchResult extends TOP {
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(SearchResult.class);
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
-  /** @generated
+  /** 
    * @return index of the type  
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
   /** Never called.  Disable default constructor
-   * @generated */
+   *  */
   protected SearchResult() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
-   * @generated
+   * 
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
@@ -47,7 +47,7 @@ public class SearchResult extends TOP {
     readObject();
   }
   
-  /** @generated
+  /** 
    * @param jcas JCas to which this Feature Structure belongs 
    */
   public SearchResult(JCas jcas) {
@@ -60,7 +60,7 @@ public class SearchResult extends TOP {
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   *  modifiable 
    */
   private void readObject() {/*default - does nothing empty block */}
      
@@ -70,7 +70,7 @@ public class SearchResult extends TOP {
   //* Feature: uri
 
   /** getter for uri - gets An identifier for the source of this search result, e.g., the name of the file that this result is drawn from, which, when combined with offset and length, uniquely identifies the span of text for this result.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getUri() {
@@ -79,7 +79,7 @@ public class SearchResult extends TOP {
     return jcasType.ll_cas.ll_getStringValue(addr, ((SearchResult_Type)jcasType).casFeatCode_uri);}
     
   /** setter for uri - sets An identifier for the source of this search result, e.g., the name of the file that this result is drawn from, which, when combined with offset and length, uniquely identifies the span of text for this result. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setUri(String v) {
@@ -92,7 +92,7 @@ public class SearchResult extends TOP {
   //* Feature: score
 
   /** getter for score - gets Relevance score associated with the search result.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public double getScore() {
@@ -101,7 +101,7 @@ public class SearchResult extends TOP {
     return jcasType.ll_cas.ll_getDoubleValue(addr, ((SearchResult_Type)jcasType).casFeatCode_score);}
     
   /** setter for score - sets Relevance score associated with the search result. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setScore(double v) {
@@ -114,7 +114,7 @@ public class SearchResult extends TOP {
   //* Feature: text
 
   /** getter for text - gets The text associated with the hit.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getText() {
@@ -123,7 +123,7 @@ public class SearchResult extends TOP {
     return jcasType.ll_cas.ll_getStringValue(addr, ((SearchResult_Type)jcasType).casFeatCode_text);}
     
   /** setter for text - sets The text associated with the hit. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setText(String v) {
@@ -136,7 +136,7 @@ public class SearchResult extends TOP {
   //* Feature: rank
 
   /** getter for rank - gets Rank of this result in the original hit-list.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public int getRank() {
@@ -145,7 +145,7 @@ public class SearchResult extends TOP {
     return jcasType.ll_cas.ll_getIntValue(addr, ((SearchResult_Type)jcasType).casFeatCode_rank);}
     
   /** setter for rank - sets Rank of this result in the original hit-list. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setRank(int v) {
@@ -158,7 +158,7 @@ public class SearchResult extends TOP {
   //* Feature: queryString
 
   /** getter for queryString - gets The query string associated with the hit.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getQueryString() {
@@ -167,7 +167,7 @@ public class SearchResult extends TOP {
     return jcasType.ll_cas.ll_getStringValue(addr, ((SearchResult_Type)jcasType).casFeatCode_queryString);}
     
   /** setter for queryString - sets The query string associated with the hit. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setQueryString(String v) {
@@ -180,7 +180,7 @@ public class SearchResult extends TOP {
   //* Feature: searchId
 
   /** getter for searchId - gets ID of the search object to which this search result belongs (matches the searchId field in the Search object).
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getSearchId() {
@@ -189,7 +189,7 @@ public class SearchResult extends TOP {
     return jcasType.ll_cas.ll_getStringValue(addr, ((SearchResult_Type)jcasType).casFeatCode_searchId);}
     
   /** setter for searchId - sets ID of the search object to which this search result belongs (matches the searchId field in the Search object). 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setSearchId(String v) {
@@ -202,7 +202,7 @@ public class SearchResult extends TOP {
   //* Feature: candidateAnswers
 
   /** getter for candidateAnswers - gets CandidateAnswerVariants generated from this SearchResult.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public FSArray getCandidateAnswers() {
@@ -211,7 +211,7 @@ public class SearchResult extends TOP {
     return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SearchResult_Type)jcasType).casFeatCode_candidateAnswers)));}
     
   /** setter for candidateAnswers - sets CandidateAnswerVariants generated from this SearchResult. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setCandidateAnswers(FSArray v) {
@@ -220,7 +220,7 @@ public class SearchResult extends TOP {
     jcasType.ll_cas.ll_setRefValue(addr, ((SearchResult_Type)jcasType).casFeatCode_candidateAnswers, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for candidateAnswers - gets an indexed value - CandidateAnswerVariants generated from this SearchResult.
-   * @generated
+   * 
    * @param i index in the array to get
    * @return value of the element at index i 
    */
@@ -231,7 +231,7 @@ public class SearchResult extends TOP {
     return (CandidateAnswerVariant)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SearchResult_Type)jcasType).casFeatCode_candidateAnswers), i)));}
 
   /** indexed setter for candidateAnswers - sets an indexed value - CandidateAnswerVariants generated from this SearchResult.
-   * @generated
+   * 
    * @param i index in the array to set
    * @param v value to set into the array 
    */

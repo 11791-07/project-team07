@@ -15,14 +15,14 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 /** A data structure that represents various NLP annotations from a parser, e.g. lists of tokens, semantic roles, etc.
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
- * @generated */
+ *  */
 public class Parse_Type extends TOP_Type {
-  /** @generated 
+  /**  
    * @return the generator for this type
    */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
-  /** @generated */
+  /**  */
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
@@ -38,19 +38,19 @@ public class Parse_Type extends TOP_Type {
         } else return new Parse(addr, Parse_Type.this);
   	  }
     };
-  /** @generated */
+  /**  */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = Parse.typeIndexID;
-  /** @generated 
-     @modifiable */
+  /**  
+      */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.oaqa.type.nlp.Parse");
  
-  /** @generated */
+  /**  */
   final Feature casFeat_tokens;
-  /** @generated */
+  /**  */
   final int     casFeatCode_tokens;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -59,7 +59,7 @@ public class Parse_Type extends TOP_Type {
       jcas.throwFeatMissing("tokens", "edu.cmu.lti.oaqa.type.nlp.Parse");
     return ll_cas.ll_getRefValue(addr, casFeatCode_tokens);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -70,11 +70,11 @@ public class Parse_Type extends TOP_Type {
     
   
  
-  /** @generated */
+  /**  */
   final Feature casFeat_semanticRoles;
-  /** @generated */
+  /**  */
   final int     casFeatCode_semanticRoles;
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
@@ -83,7 +83,7 @@ public class Parse_Type extends TOP_Type {
       jcas.throwFeatMissing("semanticRoles", "edu.cmu.lti.oaqa.type.nlp.Parse");
     return ll_cas.ll_getRefValue(addr, casFeatCode_semanticRoles);
   }
-  /** @generated
+  /** 
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
@@ -97,7 +97,7 @@ public class Parse_Type extends TOP_Type {
 
 
   /** initialize variables to correspond with Cas Type and Features
-	 * @generated
+	 * 
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */

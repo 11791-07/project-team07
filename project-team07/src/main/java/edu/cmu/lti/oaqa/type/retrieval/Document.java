@@ -12,30 +12,30 @@ import org.apache.uima.jcas.cas.TOP_Type;
 /** A document search result.
  * Updated by JCasGen Sat Oct 18 19:40:19 EDT 2014
  * XML source: /home/mog/dev/11791/project/project-team07-archetype/src/main/resources/type/OAQATypes.xml
- * @generated */
+ *  */
 public class Document extends SearchResult {
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Document.class);
-  /** @generated
-   * @ordered 
+  /** 
+   *  
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
-  /** @generated
+  /** 
    * @return index of the type  
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
   /** Never called.  Disable default constructor
-   * @generated */
+   *  */
   protected Document() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
-   * @generated
+   * 
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
@@ -44,7 +44,7 @@ public class Document extends SearchResult {
     readObject();
   }
   
-  /** @generated
+  /** 
    * @param jcas JCas to which this Feature Structure belongs 
    */
   public Document(JCas jcas) {
@@ -57,7 +57,7 @@ public class Document extends SearchResult {
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   *  modifiable 
    */
   private void readObject() {/*default - does nothing empty block */}
      
@@ -67,7 +67,7 @@ public class Document extends SearchResult {
   //* Feature: title
 
   /** getter for title - gets The title of the document.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getTitle() {
@@ -76,7 +76,7 @@ public class Document extends SearchResult {
     return jcasType.ll_cas.ll_getStringValue(addr, ((Document_Type)jcasType).casFeatCode_title);}
     
   /** setter for title - sets The title of the document. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setTitle(String v) {
@@ -89,7 +89,7 @@ public class Document extends SearchResult {
   //* Feature: docId
 
   /** getter for docId - gets A unique identifier for this document.
-   * @generated
+   * 
    * @return value of the feature 
    */
   public String getDocId() {
@@ -98,7 +98,7 @@ public class Document extends SearchResult {
     return jcasType.ll_cas.ll_getStringValue(addr, ((Document_Type)jcasType).casFeatCode_docId);}
     
   /** setter for docId - sets A unique identifier for this document. 
-   * @generated
+   * 
    * @param v value to set into the feature 
    */
   public void setDocId(String v) {
