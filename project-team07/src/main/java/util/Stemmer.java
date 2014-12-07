@@ -11,7 +11,7 @@ import edu.stanford.nlp.process.PTBTokenizer;
 
 /**
  * Stemmer, implementing the Porter Stemming Algorithm
- * <p/>
+ * 
  * The Stemmer class transforms a word into its root form. The input word can be
  * provided a character at time (by calling add()), or at once by calling one of
  * the various stem(something) methods.
@@ -35,6 +35,8 @@ public class Stemmer implements Function<Word, Word> {
 	/**
 	 * Add a character to the word being stemmed. When you are finished adding
 	 * characters, you can call stem(void) to stem the word.
+	 * 
+	 * @param ch Char added
 	 */
 	private void add(char ch) {
 		if (i == b.length) {
@@ -534,6 +536,9 @@ public class Stemmer implements Function<Word, Word> {
 	 * that the word stemmed is expected to be in lower case: forcing lower case
 	 * must be done outside the Stemmer class. Usage: Stemmer file-name
 	 * file-name ...
+	 * 
+	 * @param args List of arguments
+	 * @throws java.io.IOException Can throw java.io.IOException
 	 */
 	public static void main(String[] args) throws IOException {
 		Stemmer s = new Stemmer();
@@ -557,6 +562,9 @@ public class Stemmer implements Function<Word, Word> {
 
 	/**
 	 * Stems <code>s</code> and returns stemmed <code>String</code>.
+	 * 
+	 * @param s string to stem
+	 * @return stemmed string
 	 */
 	public String stem(String s) {
 		char[] characters = s.toCharArray();
@@ -569,6 +577,9 @@ public class Stemmer implements Function<Word, Word> {
 
 	/**
 	 * Stems <code>w</code> and returns stemmed <code>Word</code>.
+	 * 
+	 * @param w word to stem
+	 * @return stemmed word
 	 */
 	public Word stem(Word w) {
 		return (new Word(stem(w.word())));
